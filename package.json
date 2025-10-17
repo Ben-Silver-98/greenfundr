@@ -1,0 +1,26 @@
+{
+  "name": "greenfundr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.8.2",
+    "@prisma/client": "^5.18.0",
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.5",
+    "prisma": "5.18.0",
+    "typescript": "5.4.5"
+  }
+}
