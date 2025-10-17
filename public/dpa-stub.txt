@@ -1,0 +1,67 @@
+GREENFUNDR LTD. — DATA PROCESSING AGREEMENT (STUB)
+================================================
+
+1. Parties
+---------
+Controller: _______________________________
+Processor: GreenFundr Ltd., 123 Renewable Way, Suite 400, 10115 Berlin, Germany
+
+2. Subject Matter
+-----------------
+This stub outlines the principal clauses for the processing of personal data on behalf of the Controller within the GreenFundr platform. The final DPA will reference the Master Service Agreement and include the completed Appendices outlined below.
+
+3. Duration
+-----------
+Processing will continue for the term of the Master Service Agreement unless terminated earlier in accordance with its provisions.
+
+4. Nature and Purpose of Processing
+-----------------------------------
+GreenFundr will provide project fundraising, portfolio analytics, messaging, and customer support services, requiring the storage and analysis of personal data supplied by the Controller.
+
+5. Categories of Data Subjects and Personal Data
+------------------------------------------------
+Categories of Data Subjects:
+- Platform administrators and project owners
+- Donors, investors, and funding participants
+- Customer support contacts
+
+Categories of Personal Data:
+- Identification and contact data (name, email, phone)
+- Account configuration data and usage logs
+- Financial transaction metadata (no payment card details stored)
+
+6. Subprocessors
+----------------
+A current list of subprocessors is available at https://greenfundr.example/subprocessors. The list will be updated prior to onboarding any new subprocessors.
+
+7. Security Measures
+--------------------
+GreenFundr implements technical and organisational measures proportional to risk, including:
+- Encryption in transit and at rest
+- Role-based access control and MFA for personnel
+- Continuous infrastructure monitoring and alerting
+- Annual third-party penetration testing
+
+8. Data Subject Requests
+------------------------
+GreenFundr will assist the Controller with reasonable technical and organisational measures to respond to data subject requests under GDPR Articles 12-23.
+
+9. Deletion and Return of Data
+------------------------------
+Upon termination of the Services, GreenFundr will delete or return personal data within 30 days, unless EU or Member State law requires storage.
+
+10. Annexes (To Be Completed)
+-----------------------------
+Annex I: Details of Processing Activities
+Annex II: Technical and Organisational Measures
+Annex III: List of Subprocessors
+
+Signed for and on behalf of the Controller:
+
+Name: ________________________   Date: ______________
+Title: ________________________
+
+Signed for and on behalf of GreenFundr Ltd.:
+
+Name: ________________________   Date: ______________
+Title: ________________________
