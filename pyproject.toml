@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["web/node_modules", "web/.next"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "UP", "I"]
+
+[tool.ruff.format]
+quote-style = "double"

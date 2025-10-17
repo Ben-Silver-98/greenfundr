@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_SENTRY_DSN: ${NEXT_PUBLIC_SENTRY_DSN:-}
+      NEXT_PUBLIC_APP_ENV: ${NEXT_PUBLIC_APP_ENV:-development}
+      SENTRY_DSN: ${SENTRY_DSN:-}
+      APP_ENV: ${APP_ENV:-development}
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      SENTRY_DSN: ${SENTRY_DSN:-}
+    volumes:
+      - ./api:/app
