@@ -1,4 +1,17 @@
 {
+  "name": "greenfundr",
+  "version": "0.1.0",
+  "description": "Stripe subscription management service for Greenfundr",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "stripe:setup": "node scripts/setupStripeProducts.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "stripe": "^19.1.0"
   "name": "greenfundr-lifecycle-emails",
   "version": "0.1.0",
   "description": "Lifecycle email service for Greenfundr using Resend",
