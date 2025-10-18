@@ -1,87 +1,42 @@
-# Greenfundr Monorepo
+# Greenfundr
 
-This repository contains the foundations of the Greenfundr platform, organised as a monorepo with a Next.js web application and a FastAPI backend. It includes Docker tooling for local development, pre-commit hooks, and continuous integration pipelines.
+Greenfundr is an experimental landing page for a climate-focused funding platform. The project now ships with EU-hosted PostHog analytics that only activates after a visitor provides consent through a GDPR-compliant cookie banner.
+
+## Features
+
+- **PostHog analytics with EU residency** – The PostHog JavaScript SDK is loaded on demand from `https://eu.posthog.com` after consent for analytics cookies is granted.
+- **Granular cookie consent** – Visitors can opt in or out of analytics cookies while strictly necessary cookies remain always-on. Preferences are stored in both cookies and `localStorage` for one year.
+- **Consent management** – A persistent "Cookie preferences" button lets visitors revisit and update their choices at any time. Analytics capturing automatically respects the saved preferences.
+
+## Getting started
+
+1. Update the PostHog credentials in [`scripts/config.js`](scripts/config.js):
+   ```js
+   window.__POSTHOG_KEY__ = "YOUR_POSTHOG_PROJECT_API_KEY";
+   window.__POSTHOG_HOST__ = "https://eu.posthog.com"; // Use the EU residency cluster by default
+   ```
+2. Serve the site using any static file server or simply open `index.html` in your browser. Example using `serve`:
+   ```bash
+   npx serve .
+   ```
+3. Accept analytics cookies in the on-page banner. Events such as `$pageview` and `analytics_consent_granted` will begin flowing to your PostHog project once consent is provided.
+
+## Cookie consent behaviour
+
+- The banner appears on the first visit (or whenever no saved preferences are found).
+- Strictly necessary cookies cannot be disabled. Analytics cookies are disabled by default.
+- Preferences persist across visits for one year in both a first-party cookie and `localStorage`.
+- Analytics collection is immediately paused if a visitor revokes consent.
 
 ## Project structure
 
 ```
-.
-├── api/         # FastAPI backend service
-├── web/         # Next.js frontend application
-├── .github/     # Continuous integration workflows
-├── docker-compose.yml
-├── .env.example
-└── .pre-commit-config.yaml
+├── index.html          # Landing page markup and consent banner
+├── styles.css          # Global styles for the site and consent UI
+├── scripts
+│   ├── app.js          # Consent logic and PostHog integration
+│   └── config.js       # PostHog configuration (API key + host)
+└── .gitignore
 ```
 
-## Getting started
-
-1. **Install prerequisites**
-   - [Docker Desktop](https://www.docker.com/products/docker-desktop/) or Docker Engine & Docker Compose
-   - Node.js 20+ and npm (optional for running web without Docker)
-   - Python 3.11+ (optional for running api without Docker)
-
-2. **Configure environment variables**
-   - Copy the sample environment file and adjust the values as needed:
-     ```bash
-     cp .env.example .env
-     ```
-   - Populate `NEXT_PUBLIC_SENTRY_DSN` for the frontend and `SENTRY_DSN` for the backend when you are ready to enable Sentry monitoring. Leave them blank to disable Sentry locally.
-
-3. **Run the stack with Docker Compose**
-   ```bash
-   docker compose up --build
-   ```
-   - Web application: <http://localhost:3000>
-   - API service: <http://localhost:8000/health>
-
-4. **Install and run pre-commit (optional but recommended)**
-   ```bash
-   pip install pre-commit
-   pre-commit install
-   ```
-
-## Running services without Docker
-
-From the `web` directory:
-```bash
-npm install
-npm run dev
-```
-
-From the `api` directory:
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-uvicorn app.main:app --reload
-```
-
-## Testing & linting
-
-- Frontend:
-  ```bash
-  cd web
-  npm run lint
-  npm test
-  ```
-- Backend:
-  ```bash
-  cd api
-  ruff check .
-  ruff format --check .
-  pytest
-  ```
-
-## Continuous integration
-
-GitHub Actions workflows (`.github/workflows/ci.yml`) automatically lint and test both applications on every push and pull request.
-
-## Sentry integration
-
-Sentry is wired into both services. When you provide DSNs via environment variables:
-
-- **Frontend**: Set `NEXT_PUBLIC_SENTRY_DSN` (and optionally `NEXT_PUBLIC_APP_ENV`) to monitor client-side and edge errors.
-- **Backend**: Set `SENTRY_DSN` (and optionally `APP_ENV`) to capture FastAPI errors and traces.
-
-Leave the DSN values empty to disable Sentry locally.
+Feel free to adapt the markup, styles, or analytics events to fit your product needs.
