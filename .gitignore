@@ -1,3 +1,12 @@
+# Node dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Environment files
+.env
+.env.*
 # Dependency directories
 node_modules/
 bower_components/
@@ -12,6 +21,12 @@ out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
 pnpm-debug.log*
 
 # Environment variables
