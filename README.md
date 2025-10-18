@@ -1,5 +1,8 @@
 # Greenfundr
 
+This repository currently tracks infrastructure and deployment planning for the upcoming Greenfundr platform.
+
+- [Deployment guide](docs/DEPLOYMENT.md)
 Greenfundr is an experimental landing page for a climate-focused funding platform. The project now ships with EU-hosted PostHog analytics that only activates after a visitor provides consent through a GDPR-compliant cookie banner.
 
 ## Features
