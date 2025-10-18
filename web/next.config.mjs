@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Use the App Router (default in Next 13+)
-  experimental: {
-    appDir: true,
-  },
   // Ensure builds succeed without local TypeScript setup
   typescript: {
     ignoreBuildErrors: true,
@@ -12,6 +8,18 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          { type: 'header', key: 'host', value: 'www.greenfundr.com' },
+        ],
+        destination: 'https://greenfundr.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
