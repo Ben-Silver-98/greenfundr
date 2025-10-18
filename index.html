@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Greenfundr</title>
+    <meta
+      name="description"
+      content="Greenfundr helps climate innovators secure the funding they need to grow."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts/config.js"></script>
+    <script defer src="scripts/app.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Greener futures through capital</p>
+        <h1 class="hero__title">Fund climate innovation with insight</h1>
+        <p class="hero__subtitle">
+          Greenfundr connects sustainable founders and investors. Build your next
+          round with transparency, data, and community support.
+        </p>
+        <a class="cta-button" href="#get-started">Start a project</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="get-started">
+        <h2>Why Greenfundr?</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Aligned capital</h3>
+            <p>
+              Work with investors who champion decarbonisation, circular
+              materials, and regenerative technologies.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Operational insight</h3>
+            <p>
+              Track investor engagement and campaign performance with an
+              analytics layer built for founders.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Community-driven</h3>
+            <p>
+              Unlock support from climate advocates and mentors to keep your
+              mission on track.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <h2>Fundraising everyone can trust</h2>
+        <p class="section__lead">
+          We prioritise transparency and choice. Our cookie controls let you
+          decide whether to share analytics data that helps us improve Greenfundr
+          for all users.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p>&copy; <span id="footer-year"></span> Greenfundr. All rights reserved.</p>
+        <button
+          type="button"
+          id="manage-cookies"
+          class="manage-cookies-button"
+          aria-haspopup="dialog"
+          aria-controls="cookie-banner"
+          aria-expanded="false"
+        >
+          Cookie preferences
+        </button>
+      </div>
+    </footer>
+
+    <div
+      class="cookie-banner"
+      id="cookie-banner"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="cookie-banner-title"
+      aria-describedby="cookie-banner-description"
+      hidden
+      tabindex="-1"
+    >
+      <div class="cookie-banner__inner">
+        <h2 class="cookie-banner__title" id="cookie-banner-title">
+          You control your data
+        </h2>
+        <p class="cookie-banner__description" id="cookie-banner-description">
+          We use strictly necessary cookies to make our site work. With your
+          permission, we use analytics cookies to learn how the product is used
+          so we can improve it. You can update your choices at any time.
+        </p>
+
+        <div class="cookie-banner__categories">
+          <div class="cookie-category">
+            <div class="cookie-category__copy">
+              <h3 class="cookie-category__title">Strictly necessary</h3>
+              <p class="cookie-category__description">
+                Always enabled. Required for essential functions like remembering
+                your consent choices.
+              </p>
+            </div>
+            <label class="toggle" aria-label="Strictly necessary cookies">
+              <input type="checkbox" checked disabled aria-disabled="true" />
+              <span class="toggle__slider" aria-hidden="true"></span>
+            </label>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category__copy">
+              <h3 class="cookie-category__title">Analytics</h3>
+              <p class="cookie-category__description">
+                Help us understand usage so we can prioritise the most impactful
+                improvements.
+              </p>
+            </div>
+            <label class="toggle" aria-label="Analytics cookies">
+              <input type="checkbox" id="analytics-toggle" />
+              <span class="toggle__slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="cookie-banner__actions">
+          <button type="button" class="button button--primary" id="accept-all">
+            Accept all
+          </button>
+          <button type="button" class="button" id="save-preferences">
+            Save preferences
+          </button>
+          <button
+            type="button"
+            class="button button--muted"
+            id="reject-analytics"
+          >
+            Reject analytics
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
