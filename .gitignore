@@ -4,6 +4,13 @@
 # Environment variables
 .env
 .env.local
+# Node.js dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
 
 # Logs
 npm-debug.log*
@@ -16,3 +23,23 @@ yarn-error.log*
 
 # Misc
 .DS_Store
+# OS files
+.DS_Store
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Misc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

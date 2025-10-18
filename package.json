@@ -12,5 +12,29 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "stripe": "^19.1.0"
+  "name": "greenfundr-lifecycle-emails",
+  "version": "0.1.0",
+  "description": "Lifecycle email service for Greenfundr using Resend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "send:test": "ts-node src/scripts/sendTestEmail.ts"
+  },
+  "keywords": [
+    "greenfundr",
+    "emails",
+    "resend",
+    "lifecycle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "resend": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
