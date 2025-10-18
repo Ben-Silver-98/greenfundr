@@ -1,60 +1,42 @@
-# Greenfundr Lifecycle Emails
+# Greenfundr
 
-Transactional lifecycle emails delivered through [Resend](https://resend.com) for Greenfundr.
+Greenfundr is an experimental landing page for a climate-focused funding platform. The project now ships with EU-hosted PostHog analytics that only activates after a visitor provides consent through a GDPR-compliant cookie banner.
 
-## Prerequisites
+## Features
 
-- Node.js 18+
-- A Resend API key with the `greenfundr.com` domain verified
+- **PostHog analytics with EU residency** – The PostHog JavaScript SDK is loaded on demand from `https://eu.posthog.com` after consent for analytics cookies is granted.
+- **Granular cookie consent** – Visitors can opt in or out of analytics cookies while strictly necessary cookies remain always-on. Preferences are stored in both cookies and `localStorage` for one year.
+- **Consent management** – A persistent "Cookie preferences" button lets visitors revisit and update their choices at any time. Analytics capturing automatically respects the saved preferences.
 
-## Environment setup
+## Getting started
 
-1. Install dependencies:
-   ```bash
-   npm install
+1. Update the PostHog credentials in [`scripts/config.js`](scripts/config.js):
+   ```js
+   window.__POSTHOG_KEY__ = "YOUR_POSTHOG_PROJECT_API_KEY";
+   window.__POSTHOG_HOST__ = "https://eu.posthog.com"; // Use the EU residency cluster by default
    ```
-2. Copy the example environment file and fill in the values:
+2. Serve the site using any static file server or simply open `index.html` in your browser. Example using `serve`:
    ```bash
-   cp .env.example .env
+   npx serve .
    ```
-3. Provide the required variables in `.env`.
+3. Accept analytics cookies in the on-page banner. Events such as `$pageview` and `analytics_consent_granted` will begin flowing to your PostHog project once consent is provided.
 
-### Environment variables
+## Cookie consent behaviour
 
-| Variable | Description |
-| --- | --- |
-| `RESEND_API_KEY` | Resend API key with access to the `greenfundr.com` domain. |
-| `LIFECYCLE_EMAIL_SENDER` | The verified sender email (must end with `@greenfundr.com`). |
-| `LIFECYCLE_EMAIL_PREFERENCES_URL` | Public URL where recipients can update email preferences/unsubscribe from non-critical emails. Required for onboarding tips and trial reminders. |
+- The banner appears on the first visit (or whenever no saved preferences are found).
+- Strictly necessary cookies cannot be disabled. Analytics cookies are disabled by default.
+- Preferences persist across visits for one year in both a first-party cookie and `localStorage`.
+- Analytics collection is immediately paused if a visitor revokes consent.
 
-## Email templates
+## Project structure
 
-Templates live under `src/email/templates` and render both HTML and plain-text variants:
-
-- `welcome` — Sent post-signup. Provides the primary dashboard call-to-action.
-- `onboardingTips` — Sent one hour after first login. Includes three actionable steps and an email preferences link.
-- `trialReminder` — Sent on day 7 and day 13 if the account has not converted. Highlights remaining benefits and includes an email preferences link.
-
-All templates share a common layout and support preview text for better inbox rendering.
-
-## Sending test emails
-
-A helper script is available to send templates through Resend once the environment variables are configured:
-
-```bash
-npm run send:test -- welcome recipient@example.com Alex
-npm run send:test -- onboarding recipient@example.com Alex
-npm run send:test -- trial recipient@example.com 1 Alex
+```
+├── index.html          # Landing page markup and consent banner
+├── styles.css          # Global styles for the site and consent UI
+├── scripts
+│   ├── app.js          # Consent logic and PostHog integration
+│   └── config.js       # PostHog configuration (API key + host)
+└── .gitignore
 ```
 
-Arguments follow the pattern `npm run send:test -- <template> <recipient> [extra args]`. The trial reminder expects the number of days remaining as the first extra argument.
-
-## Build
-
-Compile the TypeScript source with:
-
-```bash
-npm run build
-```
-
-The compiled files output to `dist/` (ignored by git).
+Feel free to adapt the markup, styles, or analytics events to fit your product needs.
