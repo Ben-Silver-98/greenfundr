@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Greenfundr",
-  description: "Understand how Greenfundr collects, uses, and protects information for climate funding teams and supporters.",
+  title: "Privacy Policy | GreenFundr",
+  description:
+    "How GreenFundr collects, uses, and protects your information. Read our privacy commitments for climate tech clients.",
+  openGraph: {
+    title: "Privacy Policy | GreenFundr",
+    description:
+      "How GreenFundr collects, uses, and protects your information.",
+    url: "https://greenfundr.com/privacy",
+    siteName: "GreenFundr",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy | GreenFundr",
+    description:
+      "How GreenFundr collects, uses, and protects your information.",
+  },
+  alternates: {
+    canonical: "https://greenfundr.com/privacy",
+  },
 };
 
 export default function PrivacyPage() {

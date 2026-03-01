@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Greenfundr",
-  description: "Review Greenfundr's refund terms for subscriptions, onboarding services, and billing questions.",
+  title: "Refund Policy | GreenFundr",
+  description:
+    "GreenFundr refund terms for grant advisory services, subscriptions, and billing questions.",
+  openGraph: {
+    title: "Refund Policy | GreenFundr",
+    description:
+      "GreenFundr refund terms for grant advisory services and billing.",
+    url: "https://greenfundr.com/refund-policy",
+    siteName: "GreenFundr",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Refund Policy | GreenFundr",
+    description:
+      "GreenFundr refund terms for grant advisory services and billing.",
+  },
+  alternates: {
+    canonical: "https://greenfundr.com/refund-policy",
+  },
 };
 
 export default function RefundPolicyPage() {
