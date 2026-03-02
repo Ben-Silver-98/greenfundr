@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     url: "https://greenfundr.com/insights/horizon-europe-climate-funding-uk",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",

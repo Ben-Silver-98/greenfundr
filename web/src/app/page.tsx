@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+  title: "Climate Tech Grant Consultant UK | GreenFundr",
   description:
-    "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. From funding scans to full bid leadership. Book a free review.",
+    "GreenFundr helps UK climate tech SMEs win Innovate UK and Horizon Europe grants. Specialist advisory from discovery to submission. Book a free funding review.",
   openGraph: {
-    title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+    title: "Climate Tech Grant Consultant UK | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. From funding scans to full bid leadership. Book a free review.",
+      "GreenFundr helps UK climate tech SMEs win Innovate UK and Horizon Europe grants. Specialist advisory from discovery to submission. Book a free funding review.",
     url: "https://greenfundr.com",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+    title: "Climate Tech Grant Consultant UK | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. Book a free review.",
+      "GreenFundr helps UK climate tech SMEs win Innovate UK and Horizon Europe grants. Specialist advisory from discovery to submission. Book a free funding review.",
   },
   alternates: {
     canonical: "https://greenfundr.com",
@@ -100,21 +101,22 @@ const testimonials = [
   },
 ];
 
-const programmes = [
-  "Innovate UK Smart Grants",
-  "Horizon Europe",
-  "Net Zero Hydrogen Fund",
-  "ATI Programme",
-  "Regional Growth Funds",
-  "UKRI Future Leaders Fellowships",
-  "Industrial Energy Transformation Fund",
-  "Green Heat Network Fund",
-];
-
 const caseStudies = [
-  { name: "LH-SIFT", sector: "Hydrogen Aviation" },
-  { name: "AFCAD", sector: "Advanced Fuel Cells" },
-  { name: "Hydrogen Highways", sector: "Transport Infrastructure" },
+  {
+    name: "LH-SIFT",
+    sector: "Hydrogen Aviation",
+    alt: "Innovate UK liquid hydrogen aviation grant proposal — LH-SIFT programme",
+  },
+  {
+    name: "AFCAD",
+    sector: "Advanced Fuel Cells",
+    alt: "UK Government fuel cell aviation grant — AFCAD advanced fuel cell programme",
+  },
+  {
+    name: "Hydrogen Highways",
+    sector: "Transport Infrastructure",
+    alt: "Green hydrogen infrastructure grant funding — Hydrogen Highways Demonstrator",
+  },
 ];
 
 export default function Home() {
@@ -172,6 +174,8 @@ export default function Home() {
                 <div
                   key={study.name}
                   className="rounded-2xl bg-slate-950/70 p-5"
+                  role="img"
+                  aria-label={study.alt}
                 >
                   <p className="text-base font-semibold text-slate-100">
                     {study.name}
@@ -202,29 +206,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Funding programmes */}
+      {/* Open Funding Calls */}
       <section className="mx-auto w-full max-w-6xl px-6 py-20">
         <div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
           <h2 className="text-3xl font-semibold text-slate-50">
-            We Track 50+ Climate Funding Programmes
+            Open Funding Calls
           </h2>
-          <p className="mt-4 text-base text-slate-300">
-            Our team monitors every relevant UK and European funding stream so
-            you never miss a deadline. Updated weekly.
+          <p className="mt-6 text-base text-slate-300">
+            We update this section every week. To see the live funding calls
+            relevant to your technology right now, book a free review — we'll
+            walk you through exactly what's open and what you're eligible for.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {programmes.map((prog) => (
-              <span
-                key={prog}
-                className="rounded-full border border-slate-700 bg-slate-950/60 px-4 py-2 text-sm text-slate-200"
-              >
-                {prog}
-              </span>
-            ))}
-            <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-200">
-              + 40 more programmes
-            </span>
-          </div>
           <div className="mt-8">
             <a
               href="https://calendly.com/greenfundr"
@@ -232,7 +224,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
             >
-              Book a Funding Scan
+              Book a Free Funding Review
             </a>
           </div>
         </div>
@@ -336,7 +328,11 @@ export default function Home() {
           <div className="grid items-center gap-12 md:grid-cols-[1fr_1.5fr]">
             <div className="flex flex-col items-center">
               {/* Placeholder for real headshot — replace with actual image */}
-              <div className="flex h-48 w-48 items-center justify-center rounded-full bg-slate-800 text-4xl font-semibold text-emerald-300">
+              <div
+                className="flex h-48 w-48 items-center justify-center rounded-full bg-slate-800 text-4xl font-semibold text-emerald-300"
+                role="img"
+                aria-label="Ben Silver, climate tech grant consultant and founder of GreenFundr"
+              >
                 BS
               </div>
               <p className="mt-4 text-lg font-semibold text-slate-100">

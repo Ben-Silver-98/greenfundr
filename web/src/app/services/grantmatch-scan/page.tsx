@@ -4,20 +4,21 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "GrantMatch Scan | GreenFundr",
   description:
-    "Map every relevant UK and EU funding opportunity to your climate tech. Innovate UK, Horizon Europe, UKRI and sector-specific programmes assessed.",
+    "Map every relevant Innovate UK and Horizon Europe funding route to your roadmap. GreenFundr's GrantMatch Scan gives you a ranked, time-bound plan.",
   openGraph: {
     title: "GrantMatch Scan | GreenFundr",
     description:
-      "Map every relevant UK and EU funding opportunity to your climate technology.",
+      "Map every relevant Innovate UK and Horizon Europe funding route to your roadmap. GreenFundr's GrantMatch Scan gives you a ranked, time-bound plan.",
     url: "https://greenfundr.com/services/grantmatch-scan",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GrantMatch Scan | GreenFundr",
     description:
-      "Map every relevant UK and EU funding opportunity to your climate technology.",
+      "Map every relevant Innovate UK and Horizon Europe funding route to your roadmap. GreenFundr's GrantMatch Scan gives you a ranked, time-bound plan.",
   },
   alternates: {
     canonical: "https://greenfundr.com/services/grantmatch-scan",

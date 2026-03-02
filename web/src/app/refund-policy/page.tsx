@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     url: "https://greenfundr.com/refund-policy",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary",

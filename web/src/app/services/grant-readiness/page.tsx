@@ -4,20 +4,21 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Grant-Readiness Roadmapping | GreenFundr",
   description:
-    "Assess your TRL, IP, commercial traction and team readiness for grant applications. Get a clear action plan to become grant-ready.",
+    "Not ready to bid yet? GreenFundr builds a pragmatic roadmap that sequences your milestones, evidence and partner commitments ahead of the next Innovate UK call.",
   openGraph: {
     title: "Grant-Readiness Roadmapping | GreenFundr",
     description:
-      "Structured assessment and action plan to make your climate tech company grant-ready.",
+      "Not ready to bid yet? GreenFundr builds a pragmatic roadmap that sequences your milestones, evidence and partner commitments ahead of the next Innovate UK call.",
     url: "https://greenfundr.com/services/grant-readiness",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Grant-Readiness Roadmapping | GreenFundr",
     description:
-      "Get a structured assessment and action plan to become grant-ready.",
+      "Not ready to bid yet? GreenFundr builds a pragmatic roadmap that sequences your milestones, evidence and partner commitments ahead of the next Innovate UK call.",
   },
   alternates: {
     canonical: "https://greenfundr.com/services/grant-readiness",

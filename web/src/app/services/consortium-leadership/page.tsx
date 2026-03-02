@@ -4,20 +4,21 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Consortium Leadership | GreenFundr",
   description:
-    "We build and lead grant consortiums for climate tech bids. Partner identification, coordination, and multi-partner proposal management.",
+    "Bid leadership for multi-partner proposals. GreenFundr architects the project, aligns partners and delivers a submission-ready narrative.",
   openGraph: {
     title: "Consortium Leadership | GreenFundr",
     description:
-      "We build and lead grant consortiums for climate tech bids across Innovate UK and Horizon Europe.",
+      "Bid leadership for multi-partner proposals. GreenFundr architects the project, aligns partners and delivers a submission-ready narrative.",
     url: "https://greenfundr.com/services/consortium-leadership",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Consortium Leadership | GreenFundr",
     description:
-      "Multi-partner consortium building and bid leadership for climate tech grants.",
+      "Bid leadership for multi-partner proposals. GreenFundr architects the project, aligns partners and delivers a submission-ready narrative.",
   },
   alternates: {
     canonical: "https://greenfundr.com/services/consortium-leadership",

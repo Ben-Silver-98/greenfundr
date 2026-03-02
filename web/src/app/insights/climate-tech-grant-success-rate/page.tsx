@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     url: "https://greenfundr.com/insights/climate-tech-grant-success-rate",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",

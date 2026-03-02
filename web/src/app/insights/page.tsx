@@ -4,20 +4,21 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Climate Funding Insights | GreenFundr",
   description:
-    "Guides, checklists, and analysis on UK and European climate tech grants. Innovate UK, Horizon Europe, hydrogen funding, and more.",
+    "Climate tech funding insights from GreenFundr. Guides, analysis and practical advice on Innovate UK, Horizon Europe and UK government grant programmes.",
   openGraph: {
     title: "Climate Funding Insights | GreenFundr",
     description:
-      "Guides, checklists, and analysis on UK and European climate tech grants.",
+      "Climate tech funding insights from GreenFundr. Guides, analysis and practical advice on Innovate UK, Horizon Europe and UK government grant programmes.",
     url: "https://greenfundr.com/insights",
     siteName: "GreenFundr",
     type: "website",
+    images: [{ url: "https://greenfundr.com/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Climate Funding Insights | GreenFundr",
     description:
-      "Guides, checklists, and analysis on UK and European climate tech grants.",
+      "Climate tech funding insights from GreenFundr. Guides, analysis and practical advice on Innovate UK, Horizon Europe and UK government grant programmes.",
   },
   alternates: {
     canonical: "https://greenfundr.com/insights",
