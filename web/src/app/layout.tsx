@@ -109,6 +109,47 @@ export default function RootLayout({
 
           <main className="flex-1">{children}</main>
 
+          {/* Pre-footer CTA */}
+          <div className="border-t border-slate-800 bg-slate-900/40">
+            <div className="mx-auto w-full max-w-6xl px-6 py-16">
+              <h2 className="text-2xl font-semibold text-slate-50">
+                Not ready to book a call?
+              </h2>
+              <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
+                    Read the funding landscape
+                  </p>
+                  <p className="mt-3 text-sm text-slate-300">
+                    See which Innovate UK and Horizon Europe calls are open this
+                    week, with deadlines and eligibility notes.
+                  </p>
+                  <Link
+                    href="/funding-calls"
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-emerald-200 underline-offset-4 hover:underline"
+                  >
+                    View live funding calls →
+                  </Link>
+                </div>
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
+                    Understand your options first
+                  </p>
+                  <p className="mt-3 text-sm text-slate-300">
+                    Our Insights section covers how different programmes work,
+                    what assessors look for, and how to prepare.
+                  </p>
+                  <Link
+                    href="/insights"
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-emerald-200 underline-offset-4 hover:underline"
+                  >
+                    Read the insights →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <footer className="border-t border-slate-900 bg-slate-950/90">
             <div className="mx-auto w-full max-w-6xl px-6 py-8">
               <div className="flex flex-col gap-6 text-sm text-slate-400 md:flex-row md:items-start md:justify-between">

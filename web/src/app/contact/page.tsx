@@ -40,6 +40,10 @@ export default function ContactPage() {
             or send us a message and we will get back to you within one working
             day.
           </p>
+          <p className="mt-3 text-base text-slate-400">
+            Share your details and we&apos;ll get back to you within 2 working
+            days with next steps and a booking link.
+          </p>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-4xl gap-12 md:grid-cols-2">
@@ -150,6 +154,10 @@ export default function ContactPage() {
             >
               Check Your Eligibility
             </button>
+            <p className="text-xs text-slate-500">
+              Share your details and we&apos;ll get back to you within 2 working
+              days with next steps and a booking link.
+            </p>
           </form>
         </div>
       </section>
