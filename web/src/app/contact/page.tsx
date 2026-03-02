@@ -150,6 +150,9 @@ export default function ContactPage() {
             >
               Check Your Eligibility
             </button>
+            <p className="text-xs text-slate-500/80">
+              Share your details and we&apos;ll get back to you within 2 working days with next steps and a booking link.
+            </p>
           </form>
         </div>
       </section>

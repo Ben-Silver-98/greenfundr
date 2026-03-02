@@ -1,6 +1,61 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What types of grants does GreenFundr help with?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We work primarily on Innovate UK programmes, Horizon Europe calls, and UK government funding schemes including the Net Zero Hydrogen Fund and Clean Aviation. If you're a climate tech SME with an R&D or commercialisation project, there's a good chance we can map a route to funding for you.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you work on a no-win no-fee basis?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our engagements are fixed-fee, not contingency-based. We've found this produces better work — it means our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you help with Horizon Europe as well as Innovate UK?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised — the funding amounts are larger and the competition, while serious, is manageable with the right preparation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does a typical grant application take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It depends on the programme. An Innovate UK Smart Grant application typically runs six to ten weeks from kickoff to submission. A full Horizon Europe consortium bid can take four to six months. The GrantMatch Scan usually takes two to three weeks and gives you a clear picture of the timeline before you commit.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What sectors does GreenFundr specialise in?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our deepest experience is in hydrogen aviation, green hydrogen infrastructure, future mobility and clean energy systems. We've also supported projects in sustainable materials and net zero built environment. If your technology is climate-related and R&D-led, we're worth talking to.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does a GrantMatch Scan include?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A ranked map of every relevant Innovate UK, Horizon Europe and government funding route open to your technology and roadmap, with deadlines, funding amounts, eligibility notes, and a recommended bidding sequence. You leave with a clear plan for where to put your energy first.",
+      },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
   description:
@@ -36,24 +91,28 @@ const services = [
     title: "GrantMatch Scan",
     description:
       "We map every relevant funding opportunity across Innovate UK, Horizon Europe, UKRI, and sector-specific programmes to your technology and stage.",
+    pricing: "Fixed-fee engagement. Pricing on request.",
     href: "/services/grantmatch-scan",
   },
   {
     title: "Consortium Leadership",
     description:
       "We identify, approach, and coordinate consortium partners so you can lead credible multi-partner bids without the overhead.",
+    pricing: "Milestone-based fee structure. Pricing on request.",
     href: "/services/consortium-leadership",
   },
   {
     title: "Grant-Readiness Roadmapping",
     description:
       "A structured assessment of your TRL, IP position, commercial traction, and team — with a clear action plan to become grant-ready.",
+    pricing: "Fixed-fee engagement. Pricing on request.",
     href: "/services/grant-readiness",
   },
   {
     title: "Funding Advisory",
     description:
       "Ongoing strategic advice on funding pipeline, bid timing, and positioning — so you never miss a window or submit underprepared.",
+    pricing: "Bespoke engagement. Pricing on request.",
     href: "/services/advisory",
   },
 ];
@@ -120,6 +179,11 @@ const caseStudies = [
 export default function Home() {
   return (
     <div className="relative isolate overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Hero gradient */}
       <div
         className="absolute inset-x-0 -top-[320px] -z-10 blur-3xl"
@@ -151,7 +215,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-8 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
               >
-                Book a Free Funding Review
+                Book a free 30-minute funding review
               </a>
               <Link
                 href="/contact"
@@ -250,13 +314,16 @@ export default function Home() {
             <Link
               key={service.title}
               href={service.href}
-              className="group rounded-2xl border border-slate-800 bg-slate-950/60 p-6 transition-colors hover:border-emerald-500/40"
+              className="group flex flex-col rounded-2xl border border-slate-800 bg-slate-950/60 p-6 transition-colors hover:border-emerald-500/40"
             >
               <h3 className="text-lg font-semibold text-slate-100 group-hover:text-emerald-300">
                 {service.title}
               </h3>
               <p className="mt-2 text-sm text-slate-400">
                 {service.description}
+              </p>
+              <p className="mt-3 text-xs text-slate-500/80">
+                {service.pricing}
               </p>
             </Link>
           ))}
@@ -330,9 +397,90 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="mx-auto w-full max-w-6xl px-6 py-20">
+        <h2 className="text-3xl font-semibold text-slate-50">Common questions</h2>
+        <div className="mt-10 space-y-3">
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              What types of grants does GreenFundr help with?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              We work primarily on Innovate UK programmes, Horizon Europe calls, and UK government funding schemes including the Net Zero Hydrogen Fund and Clean Aviation. If you&apos;re a climate tech SME with an R&amp;D or commercialisation project, there&apos;s a good chance we can map a route to funding for you.
+            </p>
+          </details>
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              Do you work on a no-win no-fee basis?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              Our engagements are fixed-fee, not contingency-based. We&apos;ve found this produces better work — it means our focus stays on building the strongest possible proposal rather than managing risk on our side. We&apos;re happy to talk through fee structures on a call.
+            </p>
+          </details>
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              Can you help with Horizon Europe as well as Innovate UK?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised — the funding amounts are larger and the competition, while serious, is manageable with the right preparation.
+            </p>
+          </details>
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              How long does a typical grant application take?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              It depends on the programme. An Innovate UK Smart Grant application typically runs six to ten weeks from kickoff to submission. A full Horizon Europe consortium bid can take four to six months. The GrantMatch Scan usually takes two to three weeks and gives you a clear picture of the timeline before you commit.
+            </p>
+          </details>
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              What sectors does GreenFundr specialise in?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              Our deepest experience is in hydrogen aviation, green hydrogen infrastructure, future mobility and clean energy systems. We&apos;ve also supported projects in sustainable materials and net zero built environment. If your technology is climate-related and R&amp;D-led, we&apos;re worth talking to.
+            </p>
+          </details>
+          <details className="group rounded-2xl border border-slate-800 bg-slate-950/60">
+            <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-slate-100 marker:content-none hover:text-emerald-300">
+              What does a GrantMatch Scan include?
+              <span className="ml-4 shrink-0 text-emerald-400 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="px-6 pb-6 text-sm text-slate-400">
+              A ranked map of every relevant Innovate UK, Horizon Europe and government funding route open to your technology and roadmap, with deadlines, funding amounts, eligibility notes, and a recommended bidding sequence. You leave with a clear plan for where to put your energy first.
+            </p>
+          </details>
+        </div>
+      </section>
+
       {/* Founder / About */}
       <section className="border-y border-slate-800 bg-slate-900/50">
         <div className="mx-auto w-full max-w-6xl px-6 py-20">
+          {/* Stats grid */}
+          <div className="mb-16 grid grid-cols-2 gap-6 lg:grid-cols-4">
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6 text-center">
+              <p className="text-2xl font-semibold text-emerald-300">£45M+</p>
+              <p className="mt-2 text-sm text-slate-400">in grant proposals reviewed</p>
+            </div>
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6 text-center">
+              <p className="text-base font-semibold text-emerald-300">Innovate UK, Horizon Europe, NZHF</p>
+              <p className="mt-2 text-sm text-slate-400">programmes we work across</p>
+            </div>
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6 text-center">
+              <p className="text-base font-semibold text-emerald-300">Hydrogen aviation, green hydrogen, future mobility</p>
+              <p className="mt-2 text-sm text-slate-400">core specialisms</p>
+            </div>
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6 text-center">
+              <p className="text-base font-semibold text-emerald-300">Fixed-fee engagements</p>
+              <p className="mt-2 text-sm text-slate-400">no contingency, no surprises</p>
+            </div>
+          </div>
+
           <div className="grid items-center gap-12 md:grid-cols-[1fr_1.5fr]">
             <div className="flex flex-col items-center">
               {/* Placeholder for real headshot — replace with actual image */}
@@ -354,6 +502,9 @@ export default function Home() {
                 granted. With experience shaping £45M+ in proposals across
                 hydrogen, aviation, and infrastructure, we know what assessors
                 look for — and how to get your innovation funded.
+              </p>
+              <p className="mt-4 text-base text-slate-300">
+                We&apos;ve sat on the founder side of the table, so our advice is grounded in what actually works — not what looks good in a deck.
               </p>
               <Link
                 href="/about"
@@ -484,6 +635,9 @@ export default function Home() {
               >
                 Check Your Eligibility
               </button>
+              <p className="text-xs text-slate-500/80">
+                Share your details and we&apos;ll get back to you within 2 working days with next steps and a booking link.
+              </p>
             </form>
           </div>
         </div>

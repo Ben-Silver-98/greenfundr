@@ -40,13 +40,71 @@ const organisationSchema = {
   "@type": "ProfessionalService",
   name: "GreenFundr",
   description:
-    "Climate tech grant advisory helping UK and European SMEs win government and innovation funding including Innovate UK, Horizon Europe, and sector-specific programmes.",
+    "Specialist climate tech grant advisory helping UK SMEs win Innovate UK and Horizon Europe funding. Services include GrantMatch Scan, Consortium & Bid Leadership, Grant-Readiness Roadmapping, and Strategy Advisory.",
   url: "https://greenfundr.com",
-  areaServed: ["United Kingdom", "Europe"],
-  serviceType: ["Grant Writing", "Bid Management", "Funding Advisory", "Consortium Leadership"],
+  areaServed: {
+    "@type": "Country",
+    name: "United Kingdom",
+  },
+  serviceType: "Grant Advisory",
+  knowsAbout: [
+    "Innovate UK grants",
+    "Horizon Europe funding",
+    "Climate tech funding",
+    "Net Zero Hydrogen Fund",
+    "Clean Aviation grants",
+    "UK government R&D grants",
+    "Grant bid writing",
+    "Consortium management",
+  ],
   founder: {
     "@type": "Person",
     name: "Ben Silver",
+    jobTitle: "Founder & Lead Strategist",
+    description:
+      "Ben Silver has reviewed £45M+ in climate tech proposals and led consortium builds for zero-emission aviation, hydrogen and infrastructure programmes.",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Grant Advisory Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "GrantMatch Scan",
+          description:
+            "UK and EU funding landscape mapped to your technology, roadmap and timing.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Consortium & Bid Leadership",
+          description:
+            "End-to-end leadership for complex multi-partner grant proposals.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Grant-Readiness Roadmapping",
+          description:
+            "Pragmatic roadmap sequencing milestones and evidence for future bids.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Strategy Advisory",
+          description:
+            "Bespoke support for boards and leadership teams on funding strategy.",
+        },
+      },
+    ],
   },
 };
 
@@ -108,6 +166,35 @@ export default function RootLayout({
           </header>
 
           <main className="flex-1">{children}</main>
+
+          {/* Footer CTA */}
+          <section className="border-t border-slate-800 bg-slate-900/40">
+            <div className="mx-auto w-full max-w-6xl px-6 py-16">
+              <h2 className="text-2xl font-semibold text-slate-50">Not ready to book a call?</h2>
+              <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
+                  <p className="text-xs font-medium uppercase tracking-wide text-emerald-300">Read the funding landscape</p>
+                  <p className="mt-3 text-sm text-slate-300">See which Innovate UK and Horizon Europe calls are open this week, with deadlines and eligibility notes.</p>
+                  <Link
+                    href="/funding-calls"
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-emerald-200 underline-offset-4 hover:underline"
+                  >
+                    View live funding calls →
+                  </Link>
+                </div>
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
+                  <p className="text-xs font-medium uppercase tracking-wide text-emerald-300">Understand your options first</p>
+                  <p className="mt-3 text-sm text-slate-300">Our Insights section covers how different programmes work, what assessors look for, and how to prepare.</p>
+                  <Link
+                    href="/insights"
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-emerald-200 underline-offset-4 hover:underline"
+                  >
+                    Read the insights →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <footer className="border-t border-slate-900 bg-slate-950/90">
             <div className="mx-auto w-full max-w-6xl px-6 py-8">
