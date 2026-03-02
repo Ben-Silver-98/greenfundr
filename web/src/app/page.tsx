@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+  title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
   description:
-    "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. From funding scans to full bid leadership. Book a free review.",
+    "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. Ben Silver personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
   openGraph: {
-    title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+    title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. From funding scans to full bid leadership. Book a free review.",
+      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. Ben Silver personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
     url: "https://greenfundr.com",
     siteName: "GreenFundr",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
+    title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. Book a free review.",
+      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. Ben Silver personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
   },
   alternates: {
     canonical: "https://greenfundr.com",
@@ -153,7 +153,7 @@ const faqSchema = {
 };
 
 const stats = [
-  { value: "£45M+", label: "Proposals shaped" },
+  { value: "£45M", label: "in government grants awarded across 4 programmes, all led personally by Ben Silver" },
   { value: "3", label: "Major programmes shortlisted" },
   { value: "3 Sectors", label: "Hydrogen, Aviation, Infrastructure" },
   { value: "Free", label: "30-min funding review" },
@@ -214,39 +214,36 @@ const steps = [
 const testimonials = [
   {
     quote:
-      "GreenFundr structured our Innovate UK application from scratch and led the consortium build. We were shortlisted on our first attempt.",
-    name: "CTO",
-    role: "Hydrogen Storage Startup, South West England",
+      "Ben is a very enthusiastic project lead and manager with excellent communication and organisational skills. His ability to break down tasks into manageable chunks and direct the team accordingly was an essential part of our success.",
+    name: "Ian Taylor",
+    role: "Managing Director, Gas and Liquid (Cryogenic Solutions)",
+    stars: 5,
   },
   {
     quote:
-      "Their funding scan identified three programmes we had completely overlooked. The strategic advice on bid timing was invaluable.",
-    name: "Founder",
-    role: "Carbon Capture SME, Scotland",
+      "I had the pleasure of working with Ben as a partner on a recent project. He led the coordination from start to finish, from proposal writing to managing the consortium, with great energy and professionalism. His knowledge in aviation and clean energy really stands out, as well as his ability to connect people and keep things moving. If you're looking for someone who understands complex projects and knows how to make them happen, Ben is that person.",
+    name: "Vasileios Pastrikakis",
+    role: "Thermo-Fluid Systems Specialist",
+    stars: 5,
   },
-  {
-    quote:
-      "Working with GreenFundr gave us the confidence to pursue Horizon Europe. They handled the consortium partners and the technical writing.",
-    name: "CEO",
-    role: "Clean Aviation Scale-up, Midlands",
-  },
-];
-
-const programmes = [
-  "Innovate UK Smart Grants",
-  "Horizon Europe",
-  "Net Zero Hydrogen Fund",
-  "ATI Programme",
-  "Regional Growth Funds",
-  "UKRI Future Leaders Fellowships",
-  "Industrial Energy Transformation Fund",
-  "Green Heat Network Fund",
 ];
 
 const caseStudies = [
-  { name: "LH-SIFT", sector: "Hydrogen Aviation" },
-  { name: "AFCAD", sector: "Advanced Fuel Cells" },
-  { name: "Hydrogen Highways", sector: "Transport Infrastructure" },
+  {
+    name: "LH-SIFT",
+    sector: "Hydrogen Aviation",
+    attribution: "Ben led consortium strategy and assessor-facing narrative for this programme.",
+  },
+  {
+    name: "AFCAD",
+    sector: "Advanced Fuel Cells",
+    attribution: "Ben led proposal architecture, partner alignment and technical storytelling for this bid.",
+  },
+  {
+    name: "Hydrogen Highways Demonstrator",
+    sector: "Transport Infrastructure",
+    attribution: "Ben led deployment workstreams, commercial model and delivery governance for this programme.",
+  },
 ];
 
 const faqs = [
@@ -325,13 +322,10 @@ export default function Home() {
                 UK &amp; Europe Climate Tech Grant Specialists
               </span>
               <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
-                Win the grants that fund your climate breakthrough
+                Climate tech grant strategy from someone who&apos;s led the bids that get funded.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-slate-300">
-                GreenFundr helps climate tech SMEs secure Innovate UK, Horizon
-                Europe, and government grants. From funding scans to full bid
-                leadership — we handle the process so you can focus on your
-                technology.
+                Ben Silver personally led all four of GreenFundr&apos;s won programmes, including funding strategy for ZeroAvia&apos;s hydrogen aviation bids. That&apos;s £45M in government grants awarded, from eligibility through to submission. GreenFundr brings that operator experience to UK climate tech SMEs pursuing Innovate UK, Horizon Europe and government funding.
               </p>
               <div className="mt-10 flex flex-col items-stretch gap-4 sm:flex-row">
                 <a
@@ -368,12 +362,14 @@ export default function Home() {
                     <p className="mt-1 text-sm text-slate-400">
                       {study.sector}
                     </p>
+                    <p className="mt-2 text-xs text-slate-500">
+                      {study.attribution}
+                    </p>
                   </div>
                 ))}
               </div>
               <p className="text-xs text-slate-500">
-                £45M+ in grant proposals shaped across hydrogen, aviation, and
-                infrastructure sectors.
+                These are programmes Ben personally led from early concept through consortium architecture, bid writing and submission. The work spans hydrogen aviation, fuel cells and green infrastructure, backed by UK government and Horizon Europe funding.
               </p>
             </div>
           </div>
@@ -393,29 +389,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Funding programmes */}
+        {/* Funding calls */}
         <section className="mx-auto w-full max-w-6xl px-6 py-20">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
             <h2 className="text-3xl font-semibold text-slate-50">
-              We Track 50+ Climate Funding Programmes
+              Looking for open funding calls?
             </h2>
             <p className="mt-4 text-base text-slate-300">
-              Our team monitors every relevant UK and European funding stream so
-              you never miss a deadline. Updated weekly.
+              We track Innovate UK, Horizon Europe and UK government funding calls on an ongoing basis. The landscape changes frequently. Book a free funding review and we&apos;ll tell you exactly which calls are open and relevant to your roadmap right now.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              {programmes.map((prog) => (
-                <span
-                  key={prog}
-                  className="rounded-full border border-slate-700 bg-slate-950/60 px-4 py-2 text-sm text-slate-200"
-                >
-                  {prog}
-                </span>
-              ))}
-              <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-200">
-                + 40 more programmes
-              </span>
-            </div>
             <div className="mt-8">
               <a
                 href="https://calendly.com/greenfundr/grantintro"
@@ -423,7 +405,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
               >
-                Book a Funding Scan
+                Book a free funding review
               </a>
             </div>
           </div>
@@ -493,13 +475,18 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-slate-50">
             What Our Clients Say
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {testimonials.map((t) => (
               <div
                 key={t.name}
                 className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6"
               >
-                <p className="text-sm text-slate-300">
+                <div className="flex gap-0.5 text-emerald-400" aria-label={`${t.stars} out of 5 stars`}>
+                  {Array.from({ length: t.stars }).map((_, i) => (
+                    <span key={i} aria-hidden="true">★</span>
+                  ))}
+                </div>
+                <p className="mt-3 text-sm text-slate-300">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="mt-4 border-t border-slate-800 pt-4">
@@ -511,6 +498,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-sm text-slate-500">Two verified reviews. Real names, real projects.</p>
         </section>
 
         {/* Not every bid wins */}
@@ -591,10 +579,11 @@ export default function Home() {
 
             <div className="grid items-center gap-12 md:grid-cols-[1fr_1.5fr]">
               <div className="flex flex-col items-center">
-                {/* Placeholder for real headshot — replace with actual image */}
-                <div className="flex h-48 w-48 items-center justify-center rounded-full bg-slate-800 text-4xl font-semibold text-emerald-300">
-                  BS
-                </div>
+                <img
+                  src="/images/ben-silver.jpg"
+                  alt="Ben Silver, Founder of GreenFundr"
+                  className="h-48 w-48 rounded-full object-cover"
+                />
                 <p className="mt-4 text-lg font-semibold text-slate-100">
                   Ben Silver
                 </p>
@@ -605,17 +594,32 @@ export default function Home() {
                   Built by a Grant Specialist, for Climate Founders
                 </h2>
                 <p className="mt-4 text-base text-slate-300">
-                  GreenFundr was founded by Ben Silver to give climate tech SMEs
-                  the same quality of grant support that large corporates take
-                  for granted. With experience shaping £45M+ in proposals across
-                  hydrogen, aviation, and infrastructure, we know what assessors
-                  look for — and how to get your innovation funded.
+                  Ben Silver spent several years inside climate tech ventures leading public funding strategy. At ZeroAvia, the hydrogen aviation company backed by United Airlines, Alaska Airlines and the UK Government, he led the consortium architecture and funding strategy behind programmes including LH-SIFT, the UK government-backed project to fly the world&apos;s first liquid hydrogen testbed in a commercial airframe.
                 </p>
                 <p className="mt-4 text-base text-slate-300">
-                  We&apos;ve sat on the founder side of the table, so our advice
-                  is grounded in what actually works — not what looks good in a
-                  deck.
+                  Ben has personally led all four of the programmes in GreenFundr&apos;s portfolio, from early concept through to shortlist and award. That&apos;s £45M in awarded government grants spanning hydrogen aviation, fuel cell R&amp;D and green infrastructure. Each one led by Ben, not delegated.
                 </p>
+                <p className="mt-4 text-base text-slate-300">
+                  GreenFundr exists because most climate tech founders are too stretched to pursue the grants they qualify for. Ben fixes that.
+                </p>
+
+                {/* GEO copy block */}
+                <div className="mt-8">
+                  <h3 className="text-xl font-semibold text-slate-50">About GreenFundr</h3>
+                  <p className="mt-4 text-sm text-slate-400">
+                    GreenFundr is a UK-based climate tech grant advisory founded by Ben Silver. Ben specialises in Innovate UK grant applications, Horizon Europe bid writing and UK government funding programmes for climate technology SMEs.
+                  </p>
+                  <p className="mt-3 text-sm text-slate-400">
+                    Before founding GreenFundr, Ben Silver held strategy roles at ZeroAvia, the hydrogen-electric aviation company, where he led public funding strategy for programmes including LH-SIFT, a UK government-backed hydrogen aviation programme.
+                  </p>
+                  <p className="mt-3 text-sm text-slate-400">
+                    GreenFundr has led £45M in awarded government grants across four won programmes covering hydrogen aviation, advanced fuel cells and green hydrogen infrastructure. Services include grant eligibility assessment, Innovate UK application writing, Horizon Europe bid strategy and consortium leadership for multi-partner proposals.
+                  </p>
+                  <p className="mt-3 text-sm text-slate-400">
+                    GreenFundr is based in the UK and works with climate technology SMEs across the UK and Europe.
+                  </p>
+                </div>
+
                 <Link
                   href="/about"
                   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-200 underline-offset-4 hover:underline"
@@ -627,21 +631,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How We Work / Pricing Signals */}
+        {/* Why GreenFundr */}
         <section className="mx-auto w-full max-w-6xl px-6 py-20">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
             <h2 className="text-3xl font-semibold text-slate-50">
-              How We Work
+              Why GreenFundr
             </h2>
             <p className="mt-4 text-base text-slate-300">
-              We offer flexible models from fixed fees to hybrid arrangements
-              with a success component. Most engagements start with a free
-              30-minute funding review where we assess your technology, stage,
-              and the funding landscape.
+              Most grant consultants know the process. Fewer know the technology. Ben has worked inside hydrogen aviation ventures and led bids from the founder side, so the advice is practical, not theoretical.
             </p>
             <p className="mt-4 text-base text-slate-300">
-              Whether you need a one-off funding scan or ongoing bid leadership,
-              we tailor our support to your needs and budget.
+              GreenFundr works with a small number of clients at a time. You get direct access to Ben, not a junior assigned after the sales call.
+            </p>
+            <p className="mt-4 text-base text-slate-300">
+              £45M in awarded government grants. Four programmes. All four led personally by Ben, from concept to submission.
             </p>
             <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row">
               <a
@@ -668,12 +671,10 @@ export default function Home() {
             <div className="grid gap-12 md:grid-cols-2">
               <div>
                 <h2 className="text-3xl font-semibold text-slate-50">
-                  Get in Touch
+                  Not sure which grants you qualify for?
                 </h2>
                 <p className="mt-4 text-base text-slate-300">
-                  Ready to explore your funding options? Book a free 30-minute
-                  review or send us a message and we will get back to you within
-                  one working day.
+                  Most climate tech SMEs that qualify for Innovate UK or Horizon Europe funding never apply. Usually it&apos;s because they don&apos;t know where to start or don&apos;t have the time. A 30-minute call with Ben will tell you whether there&apos;s a real opportunity and what it would take to pursue it. No pitch. No obligation.
                 </p>
                 <div className="mt-8 space-y-4">
                   <a
