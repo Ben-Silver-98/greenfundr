@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://greenfundr.com
+
+# Sitemaps
+Sitemap: https://greenfundr.com/sitemap.xml

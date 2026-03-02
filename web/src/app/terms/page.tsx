@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Greenfundr",
-  description: "Read the Greenfundr Terms of Service and understand how we work with climate organisations and supporters.",
+  title: "Terms of Service | GreenFundr",
+  description:
+    "GreenFundr terms of service for climate tech grant advisory clients. Understand how we work together.",
+  openGraph: {
+    title: "Terms of Service | GreenFundr",
+    description:
+      "GreenFundr terms of service for climate tech grant advisory clients.",
+    url: "https://greenfundr.com/terms",
+    siteName: "GreenFundr",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of Service | GreenFundr",
+    description:
+      "GreenFundr terms of service for climate tech grant advisory clients.",
+  },
+  alternates: {
+    canonical: "https://greenfundr.com/terms",
+  },
 };
 
 export default function TermsPage() {
