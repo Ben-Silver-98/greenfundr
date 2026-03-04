@@ -33,23 +33,23 @@ const faqs = [
   {
     question: "Can startups apply for hydrogen grant funding in the UK?",
     answer:
-      "Yes. Several funding streams are specifically designed for early-stage hydrogen companies. Innovate UK Smart Grants are open to innovative businesses of any size, and many UKRI calls actively encourage SME participation. The key requirement is demonstrating a genuinely novel technology or approach — not company size. Startups should be realistic about which programmes match their technology readiness level: TRL 3-5 technologies suit Innovate UK feasibility studies, while later-stage demonstrations require the NZHF or sector-specific deployment funds.",
+      "Yes. Several funding streams are specifically designed for early-stage hydrogen companies. Innovate UK Smart Grants are open to innovative businesses of any size, and many UKRI calls actively encourage SME participation. The key requirement is demonstrating a genuinely novel technology or approach, not company size. Startups should be realistic about which programmes match their technology readiness level: TRL 3-5 technologies suit Innovate UK feasibility studies, while later-stage demonstrations require the NZHF or sector-specific deployment funds.",
   },
   {
     question: "Do I need a consortium to apply for hydrogen grants?",
     answer:
-      "It depends on the programme. Innovate UK Smart Grants can be submitted by a single company, though collaborative applications often score higher because they demonstrate a credible route to deployment. Horizon Europe and most ISCF-style challenges require multi-partner consortia — typically with at least one academic partner and cross-sector industry representation. The NZHF can accept single-company applications for production projects, but feasibility and FEED studies often involve engineering consultancies and offtakers as partners.",
+      "It depends on the programme. Innovate UK Smart Grants can be submitted by a single company, though collaborative applications often score higher because they demonstrate a credible route to deployment. Horizon Europe and most ISCF-style challenges require multi-partner consortia, typically with at least one academic partner and cross-sector industry representation. The NZHF can accept single-company applications for production projects, but feasibility and FEED studies often involve engineering consultancies and offtakers as partners.",
   },
   {
     question:
       "What Technology Readiness Level (TRL) do I need for hydrogen funding?",
     answer:
-      "Different programmes target different TRL bands. Innovate UK feasibility studies typically require TRL 2-4 at the start of the project. Industrial research and Smart Grant projects usually target TRL 4-6. The NZHF primarily funds TRL 6-9 projects that are moving toward deployment and commercial operation. Horizon Europe Pillar II calls span TRL 3-7 depending on the specific topic. Matching your current TRL to the right programme is critical — applying at the wrong stage is one of the most common reasons hydrogen bids fail.",
+      "Different programmes target different TRL bands. Innovate UK feasibility studies typically require TRL 2-4 at the start of the project. Industrial research and Smart Grant projects usually target TRL 4-6. The NZHF primarily funds TRL 6-9 projects that are moving toward deployment and commercial operation. Horizon Europe Pillar II calls span TRL 3-7 depending on the specific topic. Matching your current TRL to the right programme is critical. Applying at the wrong stage is one of the most common reasons hydrogen bids fail.",
   },
   {
     question: "How long does it take to receive hydrogen grant funding?",
     answer:
-      "From submission to grant offer, most Innovate UK programmes take 3-5 months. Horizon Europe projects typically take 6-9 months from call deadline to grant agreement signature. The NZHF process varies by strand but generally takes 4-8 months including due diligence. You should plan for a further 4-6 weeks for contracting before funds are released. This means you need to start preparing your bid at least 6-8 weeks before the submission deadline — earlier for consortium bids that require partner alignment and letters of support.",
+      "From submission to grant offer, most Innovate UK programmes take 3-5 months. Horizon Europe projects typically take 6-9 months from call deadline to grant agreement signature. The NZHF process varies by strand but generally takes 4-8 months including due diligence. You should plan for a further 4-6 weeks for contracting before funds are released. This means you need to start preparing your bid at least 6-8 weeks before the submission deadline, or earlier for consortium bids that require partner alignment and letters of support.",
   },
   {
     question:
@@ -112,8 +112,8 @@ export default function HydrogenGrantFundingUKPage() {
           capacity by 2030, billions of pounds in public and private funding are
           flowing into hydrogen production, storage, distribution, and end-use
           technologies. This guide maps every major grant funding route
-          available to UK hydrogen companies — from the Net Zero Hydrogen Fund
-          through to Horizon Europe — and explains how to position your
+          available to UK hydrogen companies, from the Net Zero Hydrogen Fund
+          through to Horizon Europe, and explains how to position your
           technology for maximum success.
         </p>
 
@@ -129,8 +129,8 @@ export default function HydrogenGrantFundingUKPage() {
               Hydrogen Strategy Update, positions hydrogen as essential for
               decarbonising sectors that electricity alone cannot reach:
               heavy industry, long-distance transport, shipping, aviation, and
-              high-temperature heat. The updated ambition of 10GW by 2030 — up
-              from the original 5GW target — signals a doubling of government
+              high-temperature heat. The updated ambition of 10GW by 2030, up
+              from the original 5GW target, signals a doubling of government
               commitment to the sector.
             </p>
             <p>
@@ -145,7 +145,7 @@ export default function HydrogenGrantFundingUKPage() {
             <p>
               For climate tech SMEs and mid-stage companies developing hydrogen
               technologies, this landscape represents a significant opportunity
-              — but also a challenge. The number of overlapping programmes,
+              but also a challenge. The number of overlapping programmes,
               differing eligibility criteria, and varying timelines can make it
               difficult to know where to focus. This guide breaks down each
               major funding source, explains who it is for, and provides
@@ -206,8 +206,8 @@ export default function HydrogenGrantFundingUKPage() {
                 Eligibility and Key Criteria
               </h3>
               <p className="mt-2 text-sm text-slate-400">
-                The NZHF targets low-carbon hydrogen production specifically —
-                both electrolytic (green) and CCUS-enabled (blue) hydrogen.
+                The NZHF targets low-carbon hydrogen production specifically,
+                covering both electrolytic (green) and CCUS-enabled (blue) hydrogen.
                 Projects must be based in the UK and demonstrate a clear
                 emissions reduction pathway. Assessors evaluate technical
                 maturity, commercial viability, scalability, deliverability,
@@ -226,7 +226,7 @@ export default function HydrogenGrantFundingUKPage() {
           </h2>
           <div className="mt-6 space-y-4 text-base text-slate-300">
             <p>
-              Innovate UK — the UK&apos;s innovation agency, part of UKRI — runs
+              Innovate UK, the UK&apos;s innovation agency and part of UKRI, runs
               several funding programmes that are directly relevant to hydrogen
               companies. Unlike the NZHF, which focuses on production
               deployment, Innovate UK programmes tend to support earlier-stage
@@ -253,7 +253,7 @@ export default function HydrogenGrantFundingUKPage() {
                 up to £2 million. Success rates typically sit between 10-15%,
                 making a strong application essential. The key differentiator
                 for successful hydrogen bids is demonstrating a clear
-                improvement over the current state of the art — whether that is
+                improvement over the current state of the art, whether that is
                 electrolyser efficiency, novel catalyst materials, cost
                 reduction in balance of plant, or innovative storage solutions.
               </p>
@@ -318,9 +318,9 @@ export default function HydrogenGrantFundingUKPage() {
               government-industry initiative that provides grant funding for
               aerospace R&D in the UK. Hydrogen is now one of the ATI&apos;s
               highest-priority technology areas, reflecting the aviation
-              industry&apos;s recognition that hydrogen — whether as a direct
+              industry&apos;s recognition that hydrogen, whether as a direct
               combustion fuel or as a feedstock for sustainable aviation fuel
-              (SAF) — is critical to meeting net zero aviation targets.
+              (SAF), is critical to meeting net zero aviation targets.
             </p>
             <p>
               The ATI Programme has funded several landmark hydrogen-aviation
@@ -364,7 +364,7 @@ export default function HydrogenGrantFundingUKPage() {
             <p>
               The Industrial Energy Transformation Fund (IETF), administered
               by DESNZ, provides capital grants to help energy-intensive
-              businesses switch to low-carbon fuels — including hydrogen. Phase
+              businesses switch to low-carbon fuels, including hydrogen. Phase
               3 of the IETF has allocated over £185 million in grant funding
               for industrial decarbonisation projects. Hydrogen fuel-switching
               projects are particularly well-suited to this programme,
@@ -414,8 +414,8 @@ export default function HydrogenGrantFundingUKPage() {
             </p>
             <p>
               Regional hydrogen funding takes several forms. Devolved
-              administrations — particularly the Scottish Government and the
-              Welsh Government — operate their own hydrogen-specific funding
+              administrations, particularly the Scottish Government and the
+              Welsh Government, operate their own hydrogen-specific funding
               programmes. The Scottish Government&apos;s Hydrogen Action Plan
               is backed by dedicated funding for hydrogen production,
               distribution, and end-use demonstration projects. Scottish
@@ -467,7 +467,7 @@ export default function HydrogenGrantFundingUKPage() {
               Hydrogen Europe (the industry association), and Hydrogen Europe
               Research (the research association). The Clean Hydrogen JU
               publishes annual work programmes with specific call topics
-              covering the entire hydrogen value chain — from advanced
+              covering the entire hydrogen value chain, from advanced
               electrolysis and novel production methods through to hydrogen
               storage, transport, distribution, and applications in transport,
               industry, and the built environment.
@@ -490,7 +490,7 @@ export default function HydrogenGrantFundingUKPage() {
               hydrogen technologies through its blended finance instrument
               (up to EUR 2.5 million grant plus up to EUR 15 million equity
               investment). Building a European consortium requires time and
-              relationships — our{" "}
+              relationships. Our{" "}
               <Link
                 href="/services/consortium-leadership"
                 className="font-medium text-emerald-300 underline-offset-4 hover:underline"
@@ -563,7 +563,7 @@ export default function HydrogenGrantFundingUKPage() {
                 partners that cover the full value chain: technology developers,
                 component suppliers, systems integrators, end-users, and
                 academic partners for underpinning research. Avoid consortia
-                where every partner is doing the same thing — assessors want
+                where every partner is doing the same thing. Assessors want
                 complementary capabilities with minimal overlap. Each partner
                 should have a clear, justified role with defined deliverables.
               </p>
@@ -576,7 +576,7 @@ export default function HydrogenGrantFundingUKPage() {
                 Hydrogen funding is inherently political. Your application
                 should explicitly connect to the UK Hydrogen Strategy, the
                 Ten Point Plan for a Green Industrial Revolution, the Net Zero
-                Strategy, and — where relevant — regional hydrogen cluster
+                Strategy, and, where relevant, regional hydrogen cluster
                 plans. Show how your project contributes to the
                 government&apos;s 10GW target and how it creates UK jobs,
                 builds UK supply chain capability, and supports export
@@ -597,7 +597,7 @@ export default function HydrogenGrantFundingUKPage() {
                 For production projects, your levelised cost of hydrogen (LCOH)
                 analysis should be transparent and benchmarked against DESNZ
                 and industry projections. Assessors will challenge unrealistic
-                cost assumptions — it is better to be conservative and
+                cost assumptions. It is better to be conservative and
                 credible than optimistic and questionable.
               </p>
             </div>
@@ -626,8 +626,8 @@ export default function HydrogenGrantFundingUKPage() {
               supported Hydrogen Highways projects focused on building
               hydrogen refuelling infrastructure corridors and distribution
               networks. These projects require deep technical understanding
-              of hydrogen systems — from electrolysis and liquefaction through
-              to storage, distribution, and dispensing — combined with the
+              of hydrogen systems, from electrolysis and liquefaction through
+              to storage, distribution, and dispensing, combined with the
               grant-writing expertise needed to present complex technical
               programmes in the format that assessors expect.
             </p>
@@ -718,7 +718,7 @@ export default function HydrogenGrantFundingUKPage() {
           <p className="mx-auto mt-3 max-w-xl text-base text-slate-300">
             Whether you are preparing your first hydrogen grant application or
             looking to scale across multiple programmes, GreenFundr can help.
-            Start with a free funding review — no commitment, just clarity on
+            Start with a free funding review. No commitment, just clarity on
             your next steps.
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">

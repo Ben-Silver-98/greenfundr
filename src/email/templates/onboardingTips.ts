@@ -31,7 +31,7 @@ export function renderOnboardingTipsEmail({
   const body = `
     <p style="margin:0 0 16px;">Hi ${greetingName},</p>
     <p style="margin:16px 0;">
-      You made it through your first login — great! Here are a few tips to help you get tangible value out of Greenfundr in the next couple of days.
+      You made it through your first login. Great! Here are a few tips to help you get tangible value out of Greenfundr in the next couple of days.
     </p>
     <ol style="margin:16px 0 24px; padding-left:20px;">
 ${selectedTips}
@@ -56,7 +56,7 @@ ${selectedTips}
 
   const text = `Hi ${firstName?.trim() || 'there'},
 
-You made it through your first login — great! Here are a few tips to help you get tangible value out of Greenfundr:
+You made it through your first login. Great! Here are a few tips to help you get tangible value out of Greenfundr:
 
 ${textTips}
 

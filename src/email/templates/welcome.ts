@@ -30,7 +30,7 @@ export function renderWelcomeEmail({
       <a href="${escapedDashboardUrl}" style="background-color:#0B6E4F; color:#ffffff; padding:12px 20px; border-radius:6px; text-decoration:none; display:inline-block;">Start exploring your dashboard</a>
     </p>
     <p style="margin:16px 0;">
-      If you ever have questions, reach out at <a href="mailto:${escapedSupportEmail}">${escapedSupportEmail}</a> — we’re here to help.
+      If you ever have questions, reach out at <a href="mailto:${escapedSupportEmail}">${escapedSupportEmail}</a> . We’re here to help.
     </p>
     <p style="margin:16px 0;">Talk soon,<br/>The Greenfundr team</p>
   `;
@@ -47,7 +47,7 @@ Welcome to Greenfundr! We are thrilled to help you invest in a more sustainable 
 
 Start exploring your dashboard: ${dashboardUrl}
 
-If you ever have questions, reach out at ${supportEmail} — we’re here to help.
+If you ever have questions, reach out at ${supportEmail} . We’re here to help.
 
 Talk soon,
 The Greenfundr team`;

@@ -106,7 +106,7 @@ export default function GrantReadinessChecklistPage() {
         <p className="mt-6 text-lg text-slate-300">
           A practical, section-by-section checklist to help climate technology
           companies assess whether they are truly ready to submit a competitive
-          grant application — and what to fix before the deadline.
+          grant application, and what to fix before the deadline.
         </p>
 
         {/* ---------------------------------------------------------------- */}
@@ -169,7 +169,7 @@ export default function GrantReadinessChecklistPage() {
             framing concept in grant applications. Every competition defines a
             TRL range, and if your project falls outside it, your application
             will be rejected at the eligibility stage. But assessors also
-            look deeper — they want evidence that you genuinely understand where
+            look deeper. They want evidence that you genuinely understand where
             your technology sits and what remains to be proven.
           </p>
           <div className="mt-6 space-y-3">
@@ -178,8 +178,8 @@ export default function GrantReadinessChecklistPage() {
                 <span className="mr-3 text-emerald-400">&#10003;</span>
                 Conduct a formal TRL assessment against the European Commission
                 or Innovate UK definitions. Document which criteria you have met
-                at your current level with specific evidence — test results, lab
-                reports, prototype performance data.
+                at your current level with specific evidence, such as test results, lab
+                reports, and prototype performance data.
               </p>
             </div>
             <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
@@ -205,7 +205,7 @@ export default function GrantReadinessChecklistPage() {
               <p className="text-base text-slate-100">
                 <span className="mr-3 text-emerald-400">&#10003;</span>
                 Identify the key technical risks and how you will mitigate them.
-                Assessors do not expect zero risk — they expect you to have
+                Assessors do not expect zero risk. They expect you to have
                 identified the major uncertainties and have credible plans to
                 address them during the project.
               </p>
@@ -749,7 +749,7 @@ export default function GrantReadinessChecklistPage() {
             <p>
               Companies that complete the roadmapping process before applying
               consistently achieve stronger scores. The value is not just in
-              identifying gaps — it is in knowing which gaps matter most for
+              identifying gaps; it is in knowing which gaps matter most for
               your specific target programmes, and what the most efficient
               route to closing them is.
             </p>

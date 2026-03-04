@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "When should I get a readiness assessment?",
     answer:
-      "Ideally 3–6 months before you plan to submit a major bid. This gives you time to address gaps — whether that means securing a letter of intent, filing a patent, or recruiting a key team member.",
+      "Ideally 3–6 months before you plan to submit a major bid. This gives you time to address gaps, whether that means securing a letter of intent, filing a patent, or recruiting a key team member.",
   },
   {
     question: "Can I still apply for grants without being fully ready?",
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "How is this different from a GrantMatch Scan?",
     answer:
-      "A GrantMatch Scan identifies which programmes to target. A Grant-Readiness Roadmap assesses whether you are prepared to win them. Many companies do both — the scan first to identify targets, then the roadmap to prepare.",
+      "A GrantMatch Scan identifies which programmes to target. A Grant-Readiness Roadmap assesses whether you are prepared to win them. Many companies do both: the scan first to identify targets, then the roadmap to prepare.",
   },
   {
     question: "What stage companies benefit most from this?",
@@ -94,7 +94,7 @@ export default function GrantReadinessPage() {
         </h1>
         <p className="mt-6 text-lg text-slate-300">
           A structured assessment of your technology, IP, commercial traction,
-          team, and finances — with a clear action plan to strengthen your
+          team, and finances, with a clear action plan to strengthen your
           position before you submit. Assessors score across all of these
           dimensions. We make sure you are ready.
         </p>

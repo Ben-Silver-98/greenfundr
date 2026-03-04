@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "How long does it take to build a consortium?",
     answer:
-      "Typically 4–8 weeks depending on the programme requirements and how many partners are needed. We recommend starting as soon as a relevant call is identified — or even before it opens.",
+      "Typically 4–8 weeks depending on the programme requirements and how many partners are needed. We recommend starting as soon as a relevant call is identified, or even before it opens.",
   },
 ];
 
@@ -95,8 +95,8 @@ export default function ConsortiumLeadershipPage() {
           <h2 className="text-2xl font-semibold text-slate-50">What We Handle</h2>
           {[
             { title: "Partner Identification", desc: "We map the partner landscape and identify organisations with complementary capabilities, relevant track records, and strategic alignment with the funding call." },
-            { title: "Outreach & Onboarding", desc: "We approach potential partners, present the opportunity, negotiate roles, and manage the onboarding process — saving your team weeks of coordination." },
-            { title: "Proposal Coordination", desc: "Workpackage allocation, budget distribution, Gantt charts, risk registers, IP frameworks — we handle the consortium mechanics while you focus on technical content." },
+            { title: "Outreach & Onboarding", desc: "We approach potential partners, present the opportunity, negotiate roles, and manage the onboarding process, saving your team weeks of coordination." },
+            { title: "Proposal Coordination", desc: "Workpackage allocation, budget distribution, Gantt charts, risk registers, IP frameworks. We handle the consortium mechanics while you focus on technical content." },
             { title: "Submission Management", desc: "We manage the submission portal, ensure all partner contributions are integrated, and handle the final quality assurance and compliance checks." },
           ].map((item) => (
             <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
@@ -112,7 +112,7 @@ export default function ConsortiumLeadershipPage() {
           <p className="mt-3 text-sm text-slate-300">
             We have led consortium builds for projects including LH-SIFT
             (hydrogen aviation), AFCAD (advanced fuel cells), and Hydrogen
-            Highways (transport infrastructure) — coordinating partners across
+            Highways (transport infrastructure), coordinating partners across
             academia, industry, and the public sector.
           </p>
         </div>

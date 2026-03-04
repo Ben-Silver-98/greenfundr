@@ -86,7 +86,7 @@ export default function AdvisoryPage() {
         <p className="mt-6 text-lg text-slate-300">
           Ongoing strategic advice on your funding pipeline, bid timing, and
           positioning. We monitor relevant programmes, flag opportunities, and
-          help you prioritise — so you never miss a window or submit
+          help you prioritise, so you never miss a window or submit
           underprepared.
         </p>
 

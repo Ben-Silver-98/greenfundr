@@ -114,7 +114,7 @@ const faqSchema = {
       name: "Do you work on a no-win no-fee basis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our engagements are fixed-fee, not contingency-based. We've found this produces better work — it means our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
+        text: "Our engagements are fixed-fee, not contingency-based. We've found this produces better work. Our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
       },
     },
     {
@@ -122,7 +122,7 @@ const faqSchema = {
       name: "Can you help with Horizon Europe as well as Innovate UK?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised — the funding amounts are larger and the competition, while serious, is manageable with the right preparation.",
+        text: "Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised. The funding amounts are larger and the competition, while serious, is manageable with the right preparation.",
       },
     },
     {
@@ -177,14 +177,14 @@ const services = [
   {
     title: "Grant-Readiness Roadmapping",
     description:
-      "A structured assessment of your TRL, IP position, commercial traction, and team — with a clear action plan to become grant-ready.",
+      "A structured assessment of your TRL, IP position, commercial traction, and team, with a clear action plan to become grant-ready.",
     href: "/services/grant-readiness",
     pricing: "Fixed-fee engagement. Pricing on request.",
   },
   {
     title: "Funding Advisory",
     description:
-      "Ongoing strategic advice on funding pipeline, bid timing, and positioning — so you never miss a window or submit underprepared.",
+      "Ongoing strategic advice on funding pipeline, bid timing, and positioning, so you never miss a window or submit underprepared.",
     href: "/services/advisory",
     pricing: "Bespoke engagement. Pricing on request.",
   },
@@ -201,7 +201,7 @@ const steps = [
     number: "2",
     title: "Proposal",
     description:
-      "We build your bid from narrative to workplan — handling technical writing, financial modelling, consortium coordination, and compliance.",
+      "We build your bid from narrative to workplan, handling technical writing, financial modelling, consortium coordination, and compliance.",
   },
   {
     number: "3",
@@ -255,12 +255,12 @@ const faqs = [
   {
     question: "Do you work on a no-win no-fee basis?",
     answer:
-      "Our engagements are fixed-fee, not contingency-based. We've found this produces better work — it means our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
+      "Our engagements are fixed-fee, not contingency-based. We've found this produces better work. Our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
   },
   {
     question: "Can you help with Horizon Europe as well as Innovate UK?",
     answer:
-      "Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised — the funding amounts are larger and the competition, while serious, is manageable with the right preparation.",
+      "Yes. We track both UK and EU programmes. For UK-based teams, Horizon Europe is often underutilised. The funding amounts are larger and the competition, while serious, is manageable with the right preparation.",
   },
   {
     question: "How long does a typical grant application take?",
@@ -415,7 +415,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-6 pb-20">
           <h2 className="text-3xl font-semibold text-slate-50">Our Services</h2>
           <p className="mt-4 max-w-2xl text-base text-slate-300">
-            Structured support at every stage of the funding journey — from
+            Structured support at every stage of the funding journey, from
             initial scan to full bid leadership.
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -510,7 +510,7 @@ export default function Home() {
             <p className="mt-3 text-sm text-slate-300">
               Not every bid wins. But our structured approach means your
               materials, evidence packs, and partner relationships carry forward
-              to the next round. We build assets that compound — so each
+              to the next round. We build assets that compound, so each
               application strengthens the next.
             </p>
           </div>

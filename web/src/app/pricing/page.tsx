@@ -60,7 +60,7 @@ const faqs = [
   {
     question: "What is your success rate?",
     answer:
-      "Innovate UK Smart Grants have a success rate under 3%. Our structured approach — rigorous scoping, strong narratives, and credible consortium partners — significantly improves your odds. We are transparent about fit: if a programme is not right for you, we will say so upfront.",
+      "Innovate UK Smart Grants have a success rate under 3%. Our structured approach, which includes rigorous scoping, strong narratives, and credible consortium partners, significantly improves your odds. We are transparent about fit: if a programme is not right for you, we will say so upfront.",
   },
   {
     question: "Do I need consortium partners?",
@@ -80,7 +80,7 @@ const faqs = [
   {
     question: "Do you only work with climate tech companies?",
     answer:
-      "Yes. We are exclusively focused on climate tech — hydrogen, clean aviation, carbon capture, energy storage, circular economy, and related sectors. This vertical focus means we understand the assessor landscape and what funders want to see.",
+      "Yes. We are exclusively focused on climate tech: hydrogen, clean aviation, carbon capture, energy storage, circular economy, and related sectors. This vertical focus means we understand the assessor landscape and what funders want to see.",
   },
   {
     question: "What stage should my company be at?",
@@ -159,7 +159,7 @@ export default function HowWeWorkPage() {
           </h3>
           <p className="mx-auto mt-3 max-w-2xl text-base text-slate-300">
             Book a free 30-minute funding review. We will assess your
-            technology, stage, and the funding landscape — then recommend the
+            technology, stage, and the funding landscape, then recommend the
             right level of support.
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
