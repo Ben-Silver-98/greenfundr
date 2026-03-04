@@ -76,7 +76,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           {/* Urgency banner */}
           <div className="border-b border-emerald-500/20 bg-emerald-500/5 px-6 py-2.5 text-center text-sm text-emerald-200">
-            Next Innovate UK window opens soon —{" "}
+            Next Innovate UK window opens soon.{" "}
             <a
               href="https://calendly.com/greenfundr"
               target="_blank"
@@ -161,7 +161,7 @@ export default function RootLayout({
               <div className="flex flex-col gap-6 text-sm text-slate-400 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-3">
                   <p className="font-semibold text-slate-200">GreenFundr</p>
-                  <p>Climate tech grant consultants — UK &amp; Europe</p>
+                  <p>Climate tech grant consultants, UK and Europe</p>
                   <p>© {year} GreenFundr. All rights reserved.</p>
                 </div>
                 <div className="flex flex-col gap-3">

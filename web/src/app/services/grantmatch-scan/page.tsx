@@ -96,7 +96,7 @@ export default function GrantMatchScanPage() {
           A comprehensive mapping of every relevant UK and European funding
           programme to your climate technology, stage, and commercial goals. You
           get a prioritised shortlist with deadlines, eligibility notes, and
-          strategic recommendations — so you know exactly where to focus.
+          strategic recommendations, so you know exactly where to focus.
         </p>
 
         {/* What you get */}

@@ -976,7 +976,7 @@ export default function ClimteTechGrantSuccessRatePage() {
                 How to Apply for Innovate UK Smart Grants (2026 Guide)
               </p>
               <p className="mt-1 text-xs text-slate-400">
-                Everything you need to know about Smart Grants — eligibility,
+                Everything you need to know about Smart Grants: eligibility,
                 timeline, and common mistakes.
               </p>
             </Link>

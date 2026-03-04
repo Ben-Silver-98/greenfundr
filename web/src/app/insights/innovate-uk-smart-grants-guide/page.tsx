@@ -56,7 +56,7 @@ const faqs = [
     question:
       "Do I need match funding to apply for an Innovate UK Smart Grant?",
     answer:
-      "Yes. Smart Grants require the applicant to cover a proportion of eligible project costs. The exact match funding requirement depends on your company size and the type of research. Small enterprises need to cover at least 30% of industrial research costs and 55% of experimental development costs. The match can come from your own resources or other private funding — it does not have to be cash already in the bank, but you must demonstrate a credible plan to secure it.",
+      "Yes. Smart Grants require the applicant to cover a proportion of eligible project costs. The exact match funding requirement depends on your company size and the type of research. Small enterprises need to cover at least 30% of industrial research costs and 55% of experimental development costs. The match can come from your own resources or other private funding. It does not have to be cash already in the bank, but you must demonstrate a credible plan to secure it.",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               software, green hydrogen electrolysers, or sustainable building
               materials, your project can compete on its own merits. The
               assessment criteria reward innovation, commercial potential, and
-              wider impact — areas where climate tech typically scores
+              wider impact, areas where climate tech typically scores
               strongly.
             </p>
             <p>
@@ -192,7 +192,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               UK-registered business.
             </p>
             <p>
-              Research organisations — universities, RTOs, catapult centres —
+              Research organisations (universities, RTOs, catapult centres)
               can participate as project partners in collaborative bids but
               cannot lead a Smart Grant application. Academic partners
               typically receive 80% funding for their project costs.
@@ -321,7 +321,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               experimental development is critical for your budget. Industrial
               research covers the acquisition of new knowledge and skills
               directed at developing new products, processes, or services.
-              Experimental development is closer to market — it involves
+              Experimental development is closer to market. It involves
               prototyping, testing, piloting, and validation of a new or
               improved product in a representative environment.
             </p>
@@ -332,7 +332,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               development) would split costs between the two categories. The
               blended funding rate will sit somewhere between the two
               percentages. Getting this split right in your finance form is
-              important — assessors will challenge applications where the
+              important. Assessors will challenge applications where the
               categorisation does not match the described work.
             </p>
             <p>
@@ -356,7 +356,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
             <p>
               Smart Grant applications are submitted through the Innovation
               Funding Service (IFS), Innovate UK&apos;s online portal. The
-              process is entirely digital — there is no paper application and
+              process is entirely digital. There is no paper application and
               no physical submission. Here is a step-by-step walkthrough of
               the process from start to finish.
             </p>
@@ -453,7 +453,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
                 step change rather than an incremental improvement. Reference
                 the current state of the art and position your innovation
                 relative to competing approaches. Avoid generic claims about
-                market size — be specific about your target application and
+                market size. Be specific about your target application and
                 why your solution is better.
               </p>
             </div>
@@ -469,7 +469,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
                 see that you have thought carefully about the technical
                 approach, that your methodology is sound, and that the work
                 programme is realistic for the budget and timeframe. Include
-                your risk register — identify the key technical and
+                your risk register. Identify the key technical and
                 commercial risks and explain your mitigation strategies.
                 Climate tech projects should address scale-up risks, supply
                 chain dependencies, and regulatory pathways.
@@ -485,7 +485,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
                 record, and capacity to deliver the project. Name key
                 individuals and describe their relevant experience. If you
                 have previously delivered Innovate UK or other publicly funded
-                projects, mention this — it demonstrates you understand the
+                projects, mention this. It demonstrates you understand the
                 reporting and governance requirements. For collaborative
                 projects, explain why each partner is essential and how the
                 consortium brings together complementary skills. Identify any
@@ -507,8 +507,8 @@ export default function InnovateUKSmartGrantsGuidePage() {
                 inflated day rates), subcontracting should be justified on the
                 basis of specialist expertise you do not have in-house, and
                 capital equipment costs should reflect genuine project needs.
-                Explain why the project cannot proceed without public funding
-                — this &quot;additionality&quot; argument is essential. Also
+                Explain why the project cannot proceed without public funding.
+                This &quot;additionality&quot; argument is essential. Also
                 demonstrate that you have secured or have a credible plan to
                 secure your match funding contribution.
               </p>
@@ -524,7 +524,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
                 environmental impact of your project. Provide specific,
                 quantified projections: revenue forecasts, jobs created,
                 tonnes of CO2 avoided, energy savings, or waste diverted.
-                Assessors want to see a credible route to market — who will
+                Assessors want to see a credible route to market: who will
                 buy your product, at what price, and through which channels?
                 Include an IP strategy and explain how you will protect and
                 exploit the results. For climate tech, link your impact to UK
@@ -547,7 +547,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
             <p>
               Smart Grants operate on a rolling basis, meaning the competition
               is open continuously throughout the year. However, applications
-              are assessed in periodic rounds — typically quarterly. Innovate
+              are assessed in periodic rounds, typically quarterly. Innovate
               UK publishes the dates for each assessment round on the
               competition page, and you need to submit before the round
               closing date for your application to be included in that
@@ -572,7 +572,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
             <p>
               If you are planning your application timeline, work backwards
               from the assessment round deadline. Allow at least 4 to 8 weeks
-              for application preparation — more for collaborative projects
+              for application preparation, or more for collaborative projects
               where you need to coordinate multiple partners. If this is your
               first grant application, allow additional time for getting
               registered on the IFS portal, understanding the finance forms,
@@ -641,7 +641,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
             {[
               {
                 title: "Weak Innovation Narrative",
-                desc: "The most common reason for low scores in the Scope section is failing to clearly articulate what is genuinely novel about your approach. Saying your product is 'better' or 'cheaper' is not enough. You must explain the specific technical advance, why it has not been achieved before, and what new knowledge your project will generate. Assessors are domain experts — they will know if your claimed innovation is actually the current state of the art.",
+                desc: "The most common reason for low scores in the Scope section is failing to clearly articulate what is genuinely novel about your approach. Saying your product is 'better' or 'cheaper' is not enough. You must explain the specific technical advance, why it has not been achieved before, and what new knowledge your project will generate. Assessors are domain experts. They will know if your claimed innovation is actually the current state of the art.",
               },
               {
                 title: "Vague Work Plan",
@@ -653,7 +653,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               },
               {
                 title: "Missing Additionality Argument",
-                desc: "Innovate UK needs to know that public funding is necessary for the project to proceed. If it looks like you could fund the project yourself or attract private investment to do it, your application will score poorly on value for money. Explain the specific barriers — technical risk, long payback period, market uncertainty — that make grant funding essential to de-risk the project.",
+                desc: "Innovate UK needs to know that public funding is necessary for the project to proceed. If it looks like you could fund the project yourself or attract private investment to do it, your application will score poorly on value for money. Explain the specific barriers, such as technical risk, long payback period, and market uncertainty, that make grant funding essential to de-risk the project.",
               },
               {
                 title: "Generic Impact Claims",
@@ -661,7 +661,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               },
               {
                 title: "Poor Presentation and Readability",
-                desc: "Assessors review dozens of applications in each round. A poorly structured, jargon-heavy application with no clear headings or logical flow will frustrate assessors and lose marks. Use clear headings that mirror the assessment criteria, write in plain English, and use bullet points and tables where appropriate. Have someone outside your immediate team read the application before you submit — if they cannot understand it, neither will an assessor.",
+                desc: "Assessors review dozens of applications in each round. A poorly structured, jargon-heavy application with no clear headings or logical flow will frustrate assessors and lose marks. Use clear headings that mirror the assessment criteria, write in plain English, and use bullet points and tables where appropriate. Have someone outside your immediate team read the application before you submit. If they cannot understand it, neither will an assessor.",
               },
             ].map((item) => (
               <div
@@ -710,7 +710,7 @@ export default function InnovateUKSmartGrantsGuidePage() {
               <p className="mt-2 text-sm text-slate-400">
                 Not sure if Smart Grants are your best option? Our GrantMatch
                 Scan analyses your technology, stage, and goals to identify
-                all eligible funding programmes — including Smart Grants,
+                all eligible funding programmes, including Smart Grants,
                 themed competitions, Horizon Europe, and sector-specific
                 calls.
               </p>

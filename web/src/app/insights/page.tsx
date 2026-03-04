@@ -28,7 +28,7 @@ const articles = [
   {
     title: "How to Apply for Innovate UK Smart Grants (2026 Guide)",
     description:
-      "Everything you need to know about Smart Grants — eligibility, timeline, success tips, and common mistakes to avoid.",
+      "Everything you need to know about Smart Grants: eligibility, timeline, success tips, and common mistakes to avoid.",
     href: "/insights/innovate-uk-smart-grants-guide",
     tag: "Guide",
   },
@@ -42,7 +42,7 @@ const articles = [
   {
     title: "Grant Readiness Checklist for Climate SMEs",
     description:
-      "A practical checklist covering TRL, IP, commercial traction, team, and finances — everything assessors evaluate.",
+      "A practical checklist covering TRL, IP, commercial traction, team, and finances, covering everything assessors evaluate.",
     href: "/insights/grant-readiness-checklist",
     tag: "Checklist",
   },
@@ -56,7 +56,7 @@ const articles = [
   {
     title: "What Is the Success Rate for Climate Tech Grants?",
     description:
-      "Industry win rates for Innovate UK, Horizon Europe, and sector programmes — and how to improve your odds.",
+      "Industry win rates for Innovate UK, Horizon Europe, and sector programmes, and how to improve your odds.",
     href: "/insights/climate-tech-grant-success-rate",
     tag: "Analysis",
   },

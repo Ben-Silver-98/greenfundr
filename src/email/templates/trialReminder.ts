@@ -32,8 +32,8 @@ export function renderTrialReminderEmail({
     ? `Your Greenfundr trial ends today`
     : `Your Greenfundr trial ends in ${daysRemaining} day${daysRemaining === 1 ? '' : 's'}`;
   const previewText = daysRemaining <= 1
-    ? 'Keep your insights flowing — upgrade now to avoid losing access.'
-    : 'Stay ahead — secure your sustainable investing tools before the trial ends.';
+    ? 'Keep your insights flowing. Upgrade now to avoid losing access.'
+    : 'Stay ahead and secure your sustainable investing tools before the trial ends.';
 
   const headline = daysRemaining <= 1
     ? 'Your trial is almost over'

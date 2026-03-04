@@ -53,8 +53,8 @@ export default function ContactPage() {
               Book a Free Funding Review
             </h2>
             <p className="mt-3 text-sm text-slate-300">
-              A 30-minute call where we assess your technology, stage, and goals
-              — and identify the best-fit funding programmes. No obligation.
+              A 30-minute call where we assess your technology, stage, and goals,
+              then identify the best-fit funding programmes. No obligation.
             </p>
             <a
               href="https://calendly.com/greenfundr"

@@ -51,7 +51,7 @@ export default function AboutPage() {
           <p className="mt-6 text-lg text-slate-300">
             GreenFundr exists for one reason: to help climate tech SMEs win the
             funding they need to scale. We are the only grant consultancy
-            exclusively focused on climate technology — which means deeper sector
+            exclusively focused on climate technology, which means deeper sector
             knowledge, stronger assessor insight, and better outcomes.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
               <p className="mt-4 text-sm text-slate-300">
                 Ben founded GreenFundr after years of working at the intersection
                 of climate innovation and public funding. He has shaped £45M+ in
-                grant proposals across hydrogen, aviation, and infrastructure —
+                grant proposals across hydrogen, aviation, and infrastructure,
                 and has seen first-hand how the right support at the right time
                 can transform a climate company&apos;s trajectory.
               </p>
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <h3 className="text-lg font-semibold text-slate-100">Vertical Specialisation</h3>
               <p className="mt-2 text-sm text-slate-400">
                 We work exclusively with climate tech companies. No generalist
-                grant writing — every member of our team understands the climate
+                grant writing. Every member of our team understands the climate
                 innovation landscape, the funding bodies, and what assessors
                 prioritise.
               </p>
@@ -102,7 +102,7 @@ export default function AboutPage() {
               <h3 className="text-lg font-semibold text-slate-100">End-to-End Delivery</h3>
               <p className="mt-2 text-sm text-slate-400">
                 From initial funding scan through consortium building, technical
-                writing, financial modelling, and submission management — we
+                writing, financial modelling, and submission management. We
                 handle the full process so your team stays focused on R&D.
               </p>
             </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
               <p className="mt-2 text-sm text-slate-400">
                 Not every bid wins. But our materials, evidence packs, and
                 partner relationships carry forward to the next round. Each
-                application strengthens the next — we build assets that compound.
+                application strengthens the next. We build assets that compound.
               </p>
             </div>
           </div>
