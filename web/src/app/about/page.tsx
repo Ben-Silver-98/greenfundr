@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -58,9 +59,11 @@ export default function AboutPage() {
         {/* Founder */}
         <div className="mx-auto mt-16 max-w-3xl">
           <div className="flex flex-col items-center gap-8 rounded-3xl border border-slate-800 bg-slate-900/60 p-10 md:flex-row md:items-start">
-            <img
+            <Image
               src="/images/ben-silver.jpg"
               alt="Ben Silver, Founder of GreenFundr"
+              width={144}
+              height={144}
               className="h-36 w-36 shrink-0 rounded-full object-cover"
             />
             <div>
