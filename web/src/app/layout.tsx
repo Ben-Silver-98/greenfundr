@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
@@ -60,6 +61,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/greenfundr-favicon.svg" />
+        <link rel="shortcut icon" href="/greenfundr-favicon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -87,11 +90,14 @@ export default function RootLayout({
 
           <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
             <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-              <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">
-                  GF
-                </span>
-                <span>GreenFundr</span>
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/greenfundr-logo.svg"
+                  alt="GreenFundr"
+                  width={180}
+                  height={40}
+                  priority
+                />
               </Link>
               <nav className="flex items-center gap-6 text-sm font-medium text-slate-200">
                 {primaryNavigation.map((item) => (
