@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "GrantMatch Scan | GreenFundr",
   description:
-    "Map every relevant UK and EU funding opportunity to your climate tech. Innovate UK, Horizon Europe, UKRI and sector-specific programmes assessed.",
+    "Map every relevant Innovate UK and Horizon Europe funding opportunity to your technology and stage. Fixed-fee. Delivered by a climate tech grant specialist with £45M in awarded grants.",
   openGraph: {
     title: "GrantMatch Scan | GreenFundr",
     description:
-      "Map every relevant UK and EU funding opportunity to your climate technology.",
+      "Map every relevant Innovate UK and Horizon Europe funding opportunity to your technology and stage. Fixed-fee. Delivered by a climate tech grant specialist with £45M in awarded grants.",
     url: "https://greenfundr.com/services/grantmatch-scan",
     siteName: "GreenFundr",
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GrantMatch Scan | GreenFundr",
     description:
-      "Map every relevant UK and EU funding opportunity to your climate technology.",
+      "Map every relevant Innovate UK and Horizon Europe funding opportunity to your technology and stage. Fixed-fee. Delivered by a climate tech grant specialist with £45M in awarded grants.",
   },
   alternates: {
     canonical: "https://greenfundr.com/services/grantmatch-scan",

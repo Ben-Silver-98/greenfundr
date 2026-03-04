@@ -4,20 +4,20 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
   description:
-    "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. We personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
+    "GreenFundr helps UK climate tech SMEs win Innovate UK and Horizon Europe grants. Led by a former ZeroAvia grant strategist with £45M in awarded funding. Book a free 30-minute review.",
   openGraph: {
-    title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
+    title: "Climate Tech Grant Specialists | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. We personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
-    url: "https://greenfundr.com",
+      "We help UK climate tech SMEs win Innovate UK and Horizon Europe grants. £45M in awarded funding. Book a free 30-minute review.",
+    url: "https://www.greenfundr.com",
     siteName: "GreenFundr",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Innovate UK & Horizon Europe Grant Consultant | GreenFundr",
+    title: "Climate Tech Grant Specialists | GreenFundr",
     description:
-      "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. We personally led all 4 won programmes, including ZeroAvia's hydrogen aviation bids and £45M in awarded funding. Book a free review.",
+      "We help UK climate tech SMEs win Innovate UK and Horizon Europe grants. £45M in awarded funding.",
   },
   alternates: {
     canonical: "https://greenfundr.com",
@@ -28,71 +28,32 @@ const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "GreenFundr",
+  url: "https://www.greenfundr.com",
   description:
-    "Specialist climate tech grant advisory helping UK SMEs win Innovate UK and Horizon Europe funding. Services include GrantMatch Scan, Consortium & Bid Leadership, Grant-Readiness Roadmapping, and Strategy Advisory.",
-  url: "https://greenfundr.com",
+    "UK climate tech grant consultancy. We help climate technology SMEs win Innovate UK and Horizon Europe grants. Led by a former ZeroAvia grant strategist with £45M in awarded government funding.",
+  email: "hello@greenfundr.com",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "GB",
+  },
   areaServed: {
     "@type": "Country",
     name: "United Kingdom",
   },
-  serviceType: "Grant Advisory",
   knowsAbout: [
     "Innovate UK grants",
     "Horizon Europe funding",
-    "Climate tech funding",
-    "Net Zero Hydrogen Fund",
-    "Clean Aviation grants",
-    "UK government R&D grants",
-    "Grant bid writing",
-    "Consortium management",
+    "climate tech grants",
+    "grant writing",
+    "R&D funding",
+    "hydrogen aviation funding",
+    "net zero grants",
   ],
   founder: {
     "@type": "Person",
-    jobTitle: "Founder & Lead Strategist",
-    description:
-      "GreenFundr's founder has reviewed £45M+ in climate tech proposals and led consortium builds for zero-emission aviation, hydrogen and infrastructure programmes.",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Grant Advisory Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "GrantMatch Scan",
-          description:
-            "UK and EU funding landscape mapped to your technology, roadmap and timing.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Consortium & Bid Leadership",
-          description:
-            "End-to-end leadership for complex multi-partner grant proposals.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Grant-Readiness Roadmapping",
-          description:
-            "Pragmatic roadmap sequencing milestones and evidence for future bids.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Strategy Advisory",
-          description:
-            "Bespoke support for boards and leadership teams on funding strategy.",
-        },
-      },
-    ],
+    name: "Ben Silver",
+    jobTitle: "Founder",
+    knowsAbout: ["Innovate UK", "Horizon Europe", "hydrogen aviation", "climate tech funding"],
   },
 };
 
@@ -113,7 +74,7 @@ const faqSchema = {
       name: "Do you work on a no-win no-fee basis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our engagements are fixed-fee, not contingency-based. We've found this produces better work. Our focus stays on building the strongest possible proposal rather than managing risk on our side. We're happy to talk through fee structures on a call.",
+        text: "Our engagements are fixed-fee, not contingency-based. We've found this produces better work. Our focus stays on building the strongest possible proposal rather than managing risk on our side.",
       },
     },
     {
@@ -129,7 +90,7 @@ const faqSchema = {
       name: "How long does a typical grant application take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It depends on the programme. An Innovate UK Smart Grant application typically runs six to ten weeks from kickoff to submission. A full Horizon Europe consortium bid can take four to six months. The GrantMatch Scan usually takes two to three weeks and gives you a clear picture of the timeline before you commit.",
+        text: "It depends on the programme. An Innovate UK Smart Grant application typically runs six to ten weeks from kickoff to submission. A full Horizon Europe consortium bid can take four to six months.",
       },
     },
     {
@@ -137,15 +98,7 @@ const faqSchema = {
       name: "What sectors does GreenFundr specialise in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our deepest experience is in hydrogen aviation, green hydrogen infrastructure, future mobility and clean energy systems. We've also supported projects in sustainable materials and net zero built environment. If your technology is climate-related and R&D-led, we're worth talking to.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What does a GrantMatch Scan include?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A ranked map of every relevant Innovate UK, Horizon Europe and government funding route open to your technology and roadmap, with deadlines, funding amounts, eligibility notes, and a recommended bidding sequence. You leave with a clear plan for where to put your energy first.",
+        text: "Our deepest experience is in hydrogen aviation, green hydrogen infrastructure, future mobility and clean energy systems. We've also supported projects in sustainable materials and net zero built environment.",
       },
     },
   ],

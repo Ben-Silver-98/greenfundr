@@ -5,11 +5,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About GreenFundr | Climate Tech Grant Advisory",
   description:
-    "GreenFundr is a specialist climate tech grant consultancy founded by Ben Silver. £45M+ in proposals shaped across hydrogen, aviation, and infrastructure.",
+    "GreenFundr is a UK climate tech grant consultancy. Founded by a former ZeroAvia grant strategist who personally led £45M in awarded government grants. Direct founder access on every engagement.",
   openGraph: {
     title: "About GreenFundr | Climate Tech Grant Advisory",
     description:
-      "Specialist climate tech grant consultancy. £45M+ in proposals shaped across hydrogen, aviation, and infrastructure.",
+      "GreenFundr is a UK climate tech grant consultancy. Founded by a former ZeroAvia grant strategist who personally led £45M in awarded government grants. Direct founder access on every engagement.",
     url: "https://greenfundr.com/about",
     siteName: "GreenFundr",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About GreenFundr | Climate Tech Grant Advisory",
     description:
-      "Specialist climate tech grant consultancy. £45M+ in proposals shaped.",
+      "GreenFundr is a UK climate tech grant consultancy. Founded by a former ZeroAvia grant strategist who personally led £45M in awarded government grants. Direct founder access on every engagement.",
   },
   alternates: {
     canonical: "https://greenfundr.com/about",

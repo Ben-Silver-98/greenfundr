@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Funding Advisory | GreenFundr",
   description:
-    "Ongoing strategic funding advice for climate tech companies. Pipeline management, bid timing, and positioning to maximise grant success.",
+    "Ongoing strategic advice on funding pipeline, bid timing and positioning for Innovate UK and Horizon Europe. Never miss a window or submit underprepared. Fixed-fee engagements.",
   openGraph: {
     title: "Funding Advisory | GreenFundr",
     description:
-      "Ongoing strategic funding advice for climate tech companies. Never miss a funding window.",
+      "Ongoing strategic advice on funding pipeline, bid timing and positioning for Innovate UK and Horizon Europe. Never miss a window or submit underprepared. Fixed-fee engagements.",
     url: "https://greenfundr.com/services/advisory",
     siteName: "GreenFundr",
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Funding Advisory | GreenFundr",
     description:
-      "Ongoing strategic funding advice for climate tech companies.",
+      "Ongoing strategic advice on funding pipeline, bid timing and positioning for Innovate UK and Horizon Europe. Never miss a window or submit underprepared. Fixed-fee engagements.",
   },
   alternates: {
     canonical: "https://greenfundr.com/services/advisory",

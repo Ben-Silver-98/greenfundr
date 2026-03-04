@@ -3,20 +3,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact GreenFundr | Book a Funding Review",
   description:
-    "Get in touch with GreenFundr. Book a free 30-minute funding review or send us a message about your climate tech grant needs.",
+    "Book a free 30-minute funding review with GreenFundr. We'll tell you exactly which Innovate UK and Horizon Europe calls are open and relevant to your climate tech roadmap right now.",
   openGraph: {
     title: "Contact GreenFundr | Book a Funding Review",
     description:
-      "Book a free 30-minute funding review or send us a message about your climate tech grant needs.",
+      "Book a free 30-minute funding review with GreenFundr. We'll tell you exactly which Innovate UK and Horizon Europe calls are open and relevant to your climate tech roadmap right now.",
     url: "https://greenfundr.com/contact",
     siteName: "GreenFundr",
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Contact GreenFundr | Book a Funding Review",
     description:
-      "Book a free 30-minute funding review or get in touch about your grant needs.",
+      "Book a free 30-minute funding review with GreenFundr. We'll tell you exactly which Innovate UK and Horizon Europe calls are open and relevant to your climate tech roadmap right now.",
   },
   alternates: {
     canonical: "https://greenfundr.com/contact",
