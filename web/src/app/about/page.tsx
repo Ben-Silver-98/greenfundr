@@ -58,10 +58,11 @@ export default function AboutPage() {
         {/* Founder */}
         <div className="mx-auto mt-16 max-w-3xl">
           <div className="flex flex-col items-center gap-8 rounded-3xl border border-slate-800 bg-slate-900/60 p-10 md:flex-row md:items-start">
-            {/* Placeholder for real headshot — replace with actual image */}
-            <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-full bg-slate-800 text-3xl font-semibold text-emerald-300">
-              BS
-            </div>
+            <img
+              src="/images/ben-silver.jpg"
+              alt="Ben Silver, Founder of GreenFundr"
+              className="h-36 w-36 shrink-0 rounded-full object-cover"
+            />
             <div>
               <h2 className="text-2xl font-semibold text-slate-50">Ben Silver</h2>
               <p className="mt-1 text-sm text-emerald-300">Founder</p>
