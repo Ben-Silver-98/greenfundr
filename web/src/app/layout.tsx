@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
   description:
     "GreenFundr helps UK climate tech SMEs win Innovate UK, Horizon Europe and government grants. From funding scans to full bid leadership. Book a free review.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/greenfundr-favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Climate Tech Grant Consultants | UK & Europe | GreenFundr",
     description:
@@ -43,6 +50,13 @@ const organisationSchema = {
   description:
     "Climate tech grant advisory helping UK and European SMEs win government and innovation funding including Innovate UK, Horizon Europe, and sector-specific programmes.",
   url: "https://greenfundr.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://greenfundr.com/greenfundr-logo.svg",
+    width: 220,
+    height: 48,
+  },
+  image: "https://greenfundr.com/greenfundr-logo.svg",
   areaServed: ["United Kingdom", "Europe"],
   serviceType: ["Grant Writing", "Bid Management", "Funding Advisory", "Consortium Leadership"],
   founder: {
@@ -61,8 +75,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/greenfundr-favicon.svg" />
-        <link rel="shortcut icon" href="/greenfundr-favicon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
