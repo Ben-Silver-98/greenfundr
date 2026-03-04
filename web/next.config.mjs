@@ -8,18 +8,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   poweredByHeader: false,
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          { type: 'header', key: 'host', value: 'www.greenfundr.com' },
-        ],
-        destination: 'https://greenfundr.com/:path*',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
