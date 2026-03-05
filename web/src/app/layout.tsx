@@ -92,12 +92,10 @@ export default function RootLayout({
           <div className="border-b border-emerald-500/20 bg-emerald-500/5 px-6 py-2.5 text-center text-sm text-emerald-200">
             Next Innovate UK window opens soon.{" "}
             <a
-              href="https://calendly.com/greenfundr"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sales@greenfundr.com"
               className="font-semibold underline underline-offset-4 hover:text-emerald-100"
             >
-              book your funding scan
+              get in touch
             </a>{" "}
             to assess fit before the deadline.
           </div>

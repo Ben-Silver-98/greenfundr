@@ -36,33 +36,30 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="mt-6 text-lg text-slate-300">
-            Ready to explore your funding options? Book a free 30-minute review
-            or send us a message and we will get back to you within one working
-            day.
+            Ready to explore your funding options? Get in touch and we will get
+            back to you within one working day.
           </p>
           <p className="mt-3 text-base text-slate-400">
             Share your details and we&apos;ll get back to you within 2 working
-            days with next steps and a booking link.
+            days with next steps.
           </p>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-4xl gap-12 md:grid-cols-2">
-          {/* Book a call */}
+          {/* Get in Touch */}
           <div className="rounded-3xl border border-emerald-500/30 bg-emerald-500/5 p-8">
             <h2 className="text-xl font-semibold text-slate-50">
-              Book a Free Funding Review
+              Get in Touch
             </h2>
             <p className="mt-3 text-sm text-slate-300">
-              A 30-minute call where we assess your technology, stage, and goals,
-              then identify the best-fit funding programmes. No obligation.
+              Tell us about your technology, stage, and goals, and we will
+              identify the best-fit funding programmes for you. No obligation.
             </p>
             <a
-              href="https://calendly.com/greenfundr"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sales@greenfundr.com"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
             >
-              Book a Free Funding Review
+              Email Us
             </a>
           </div>
 
@@ -70,14 +67,13 @@ export default function ContactPage() {
           <div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
             <h2 className="text-xl font-semibold text-slate-50">Email Us</h2>
             <p className="mt-3 text-sm text-slate-300">
-              Prefer email? Send us a message and we will respond within one
-              working day.
+              Send us a message and we will respond within one working day.
             </p>
             <a
-              href="mailto:hello@greenfundr.com"
+              href="mailto:sales@greenfundr.com"
               className="mt-6 inline-flex items-center text-base font-semibold text-emerald-200 underline-offset-4 hover:underline"
             >
-              hello@greenfundr.com
+              sales@greenfundr.com
             </a>
           </div>
         </div>

@@ -123,12 +123,10 @@ export default function GrantReadinessPage() {
             step.
           </p>
           <a
-            href="https://calendly.com/greenfundr"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:sales@greenfundr.com"
             className="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
           >
-            Book a Free Funding Review
+            Get in Touch
           </a>
         </div>
 

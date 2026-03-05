@@ -326,12 +326,10 @@ export default function Home() {
               </p>
               <div className="mt-10 flex flex-col items-stretch gap-4 sm:flex-row">
                 <a
-                  href="https://calendly.com/greenfundr/grantintro"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:sales@greenfundr.com"
                   className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-8 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
                 >
-                  Book a free 30-minute funding review
+                  Get in Touch
                 </a>
                 <Link
                   href="/contact"
@@ -397,12 +395,10 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <a
-                href="https://calendly.com/greenfundr/grantintro"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:sales@greenfundr.com"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
               >
-                Book a free funding review
+                Get in Touch
               </a>
             </div>
           </div>
@@ -639,12 +635,10 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row">
               <a
-                href="https://calendly.com/greenfundr/grantintro"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:sales@greenfundr.com"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
               >
-                Book a Free Funding Review
+                Get in Touch
               </a>
               <Link
                 href="/contact"
@@ -669,20 +663,18 @@ export default function Home() {
                 </p>
                 <div className="mt-8 space-y-4">
                   <a
-                    href="https://calendly.com/greenfundr/grantintro"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:sales@greenfundr.com"
                     className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
                   >
-                    Book a Free Funding Review
+                    Get in Touch
                   </a>
                   <p className="text-sm text-slate-400">
-                    Or email us at{" "}
+                    Email us at{" "}
                     <a
-                      href="mailto:hello@greenfundr.com"
+                      href="mailto:sales@greenfundr.com"
                       className="text-emerald-200 underline-offset-4 hover:underline"
                     >
-                      hello@greenfundr.com
+                      sales@greenfundr.com
                     </a>
                   </p>
                 </div>

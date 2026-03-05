@@ -674,12 +674,10 @@ export default function HydrogenGrantFundingUKPage() {
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://calendly.com/greenfundr"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sales@greenfundr.com"
               className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
             >
-              Book a Free Funding Review
+              Get in Touch
             </a>
             <Link
               href="/services/grantmatch-scan"
@@ -723,12 +721,10 @@ export default function HydrogenGrantFundingUKPage() {
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://calendly.com/greenfundr"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sales@greenfundr.com"
               className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-7 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
             >
-              Book a Free Funding Review
+              Get in Touch
             </a>
             <Link
               href="/insights"
