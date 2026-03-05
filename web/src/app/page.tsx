@@ -29,7 +29,7 @@ const professionalServiceSchema = {
   "@type": "ProfessionalService",
   name: "GreenFundr",
   description:
-    "Specialist climate tech grant advisory helping UK SMEs win Innovate UK and Horizon Europe funding. Services include GrantMatch Scan, Consortium & Bid Leadership, Grant-Readiness Roadmapping, and Strategy Advisory.",
+    "UK climate tech grant consultancy specialising in Innovate UK grant applications, Horizon Europe bid writing and government funding for climate technology SMEs. £45M in awarded grants across four personally led programmes.",
   url: "https://greenfundr.com",
   areaServed: {
     "@type": "Country",
@@ -277,7 +277,7 @@ const faqs = [
 ];
 
 const aboutStats = [
-  { value: "£45M+", label: "in grant proposals reviewed" },
+  { value: "£45M+", label: "in government grants awarded across personally led programmes" },
   {
     value: "Innovate UK, Horizon Europe, NZHF",
     label: "programmes we work across",
@@ -316,26 +316,26 @@ export default function Home() {
           <div className="grid items-start gap-16 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <span className="inline-flex items-center rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-1 text-sm text-emerald-200">
-                UK &amp; Europe Climate Tech Grant Specialists
+                UK &amp; Europe Climate Tech Grant Consultants
               </span>
               <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
-                Climate tech grant strategy from someone who&apos;s led the bids that get funded.
+                Most climate tech SMEs that qualify for Innovate UK or Horizon Europe funding never apply.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-slate-300">
-                GreenFundr personally led all four of our won programmes, including funding strategy for ZeroAvia&apos;s hydrogen aviation bids. That&apos;s £45M in government grants awarded, from eligibility through to submission. We bring that operator experience to UK climate tech SMEs pursuing Innovate UK, Horizon Europe and government funding.
+                Usually it&apos;s a time problem, not an eligibility one. The funding is there — hundreds of millions flows through Innovate UK and Horizon Europe each year to qualifying UK climate tech businesses, but most never submit a bid. GreenFundr takes on the bid from eligibility check to submission, so your team stays focused on the actual R&amp;D. We&apos;ve personally led £45M in awarded government grants across four programmes.
               </p>
               <div className="mt-10 flex flex-col items-stretch gap-4 sm:flex-row">
                 <a
                   href="mailto:sales@greenfundr.com"
                   className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-8 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
                 >
-                  Get in Touch
+                  Check Your Eligibility — Free 30-Min Call
                 </a>
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-full border border-emerald-500/40 px-8 py-3 text-base font-semibold text-emerald-200 transition-colors hover:bg-emerald-500/10"
                 >
-                  Check Your Eligibility
+                  Tell Us About Your Project
                 </Link>
               </div>
             </div>
@@ -388,7 +388,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-6 py-20">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
             <h2 className="text-3xl font-semibold text-slate-50">
-              Looking for open funding calls?
+              Which funding calls are open right now?
             </h2>
             <p className="mt-4 text-base text-slate-300">
               We track Innovate UK, Horizon Europe and UK government funding calls on an ongoing basis. The landscape changes frequently. Book a free funding review and we&apos;ll tell you exactly which calls are open and relevant to your roadmap right now.
@@ -408,8 +408,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-6 pb-20">
           <h2 className="text-3xl font-semibold text-slate-50">Our Services</h2>
           <p className="mt-4 max-w-2xl text-base text-slate-300">
-            Structured support at every stage of the funding journey, from
-            initial scan to full bid leadership.
+            The right support depends on where you are. Some clients come to us with an open call in hand. Others are six months from being ready to bid. We stay involved from the first funding scan through to submission.
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {services.map((service) => (
@@ -439,8 +438,7 @@ export default function Home() {
               How It Works
             </h2>
             <p className="mt-4 max-w-2xl text-base text-slate-300">
-              Three steps from first conversation to submitted bid. Simple,
-              structured, and transparent.
+              Three steps from first conversation to submitted bid.
             </p>
             <div className="mt-10 grid gap-8 md:grid-cols-3">
               {steps.map((step) => (
@@ -631,7 +629,7 @@ export default function Home() {
               GreenFundr works with a small number of clients at a time. You get direct access to our founder, not a junior assigned after the sales call.
             </p>
             <p className="mt-4 text-base text-slate-300">
-              £45M in awarded government grants. Four programmes. All four led personally, from concept to submission.
+              £45M in awarded government grants across four programmes. Each one led personally, from concept to submission. Not delegated.
             </p>
             <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row">
               <a

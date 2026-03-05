@@ -90,14 +90,14 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           {/* Urgency banner */}
           <div className="border-b border-emerald-500/20 bg-emerald-500/5 px-6 py-2.5 text-center text-sm text-emerald-200">
-            Next Innovate UK window opens soon.{" "}
+            Innovate UK runs rolling funding windows.{" "}
             <a
               href="mailto:sales@greenfundr.com"
               className="font-semibold underline underline-offset-4 hover:text-emerald-100"
             >
-              get in touch
+              Book a free 30-min call
             </a>{" "}
-            to assess fit before the deadline.
+            to check your fit before the next deadline.
           </div>
 
           <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
