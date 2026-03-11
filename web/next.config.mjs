@@ -8,6 +8,15 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/funding-calls",
+        destination: "/insights",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
