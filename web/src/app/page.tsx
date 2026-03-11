@@ -322,14 +322,14 @@ export default function Home() {
                 Most climate tech SMEs that qualify for Innovate UK or Horizon Europe funding never apply.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-slate-300">
-                Usually it&apos;s a time problem, not an eligibility one. The funding is there — hundreds of millions flows through Innovate UK and Horizon Europe each year to qualifying UK climate tech businesses, but most never submit a bid. GreenFundr takes on the bid from eligibility check to submission, so your team stays focused on the actual R&amp;D. We&apos;ve personally led £45M in awarded government grants across four programmes.
+                Usually it&apos;s a time problem, not an eligibility one. Hundreds of millions flows through Innovate UK and Horizon Europe each year to qualifying UK climate tech businesses, but most never submit a bid. GreenFundr takes on the bid from eligibility check to submission, so your team stays focused on the actual R&amp;D. We&apos;ve personally led £45M in awarded government grants across four programmes.
               </p>
               <div className="mt-10 flex flex-col items-stretch gap-4 sm:flex-row">
                 <a
                   href="mailto:sales@greenfundr.com"
                   className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-8 py-3 text-base font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 hover:bg-emerald-300"
                 >
-                  Check Your Eligibility — Free 30-Min Call
+                  Check Your Eligibility: Free 30-Min Call
                 </a>
                 <Link
                   href="/contact"
